@@ -1,0 +1,126 @@
+
+
+div{
+    margin: 40px
+}
+
+.input {
+    padding: 14px 40px;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.2s ease;
+    border: solid 1px
+}
+
+.input--default{
+    border: 1px solid var(--main-color);
+}
+
+.input:hover {
+    border: 1px solid var(--main-color-hover);
+}
+
+.input:focus {
+    border: 1px solid var(--main-color-hover);
+    box-shadow: 0 0 0 4px var(--main-color-light);
+}
+
+.input:active {
+    border: 1px solid var(--main-color-active);
+}
+
+/* 
+  __wrapper {
+    display: flex;
+    position: relative;
+  }
+  &--default,
+  &--validated {
+    border: 1px solid $border-default;
+    &:hover {
+      border: 1px solid $border-color-hovered;
+    }
+    &:focus {
+      border: 1px solid $border-color-focused;
+      box-shadow: 0 0 0 4px $border-focus-brand;
+    }
+    &:active {
+      border: 1px solid $border-color-pressed;
+      ;
+    }
+  }
+  &--disabled {
+    border: 1px solid $disabled-border !important;
+    color: $disabled-text !important;
+    pointer-events: none;
+  }
+  &--empty {
+    color: $text-body-4;
+  }
+
+  &--erroned {
+    border: 1px solid $border-negative;
+    &:hover {
+      border: 1px solid $error-text-hovered;
+    }
+    &:active {
+      border: 1px solid $error-text-pressed;
+    }
+  }
+
+  &__icon {
+    &--left {
+      .icon {
+        position: absolute;
+        bottom: 12px;
+        top: 12px;
+        left: 12px;
+        color: $icon-neutral-2;
+      }
+    }
+
+    &--right {
+      .icon {
+        position: absolute;
+        bottom: 12px;
+        top: 12px;
+        right: 12px;
+        color: $icon-neutral-2;
+      }
+    }
+
+    &--disabled {
+      svg {
+        fill: $disabled-text;
+      }
+    }
+  }
+
+  &__helper {
+    display: block;
+    padding-top: 8px;
+    &--default,
+    &--validated {
+      color: $text-body-4;
+    }
+    &--erroned {
+      color: $text-negative;
+    }
+  }
+  &__label {
+    display: block;
+    padding-bottom: 8px;
+    color: $next-text-body;
+  }
+}
+
+.input, select {
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: $next-text-body;
+}
+
+@media (max-width: 600px) {
+  .input, select {
+    font-size: 0.825rem;
+  } */

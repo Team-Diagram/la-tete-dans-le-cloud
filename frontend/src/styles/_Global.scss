@@ -1,7 +1,7 @@
 @import '../components/main';
 @import '../views/main';
-@import 'variables.css';
-@import 'font.css';
+@import '_Variables.scss';
+@import '_Font.scss';
 
 /* Reset CSS from github.com/necolas/normalize.css */
 .bar {

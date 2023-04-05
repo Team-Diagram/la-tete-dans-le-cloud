@@ -1,4 +1,4 @@
-import './styles/global.css'
+import './styles/_Global.scss'
 import { Home, Dashboard } from './views/index'
 
 

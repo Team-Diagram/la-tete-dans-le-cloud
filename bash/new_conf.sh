@@ -23,26 +23,26 @@ sudo touch /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 757 /etc/nginx/sites-enabled/$CONF
 
-TEXTE="server { \n
-	listen 80; \n
-	listen [::]:80; \n
-	server_name $DOMAINE; \n
-	root /home/$USER/$CONF; \n
-	index index.html index.htm index.nginx-debian.html; \n
-\n
-	server_name _; \n
-\n
-	location / { \n
-		try_files \$uri \$uri/ =404; \n
-	} \n
-	location ~* ^.+\.(xml|ogg|ogv|svg|svgz|eot|otf|woff|)$ \n
-	{ \n
-		access_log off; \n
-		log_not_found off; \n
-		expires max; \n
-	} \n
-}\n
-"
-echo $TEXTE >> /etc/nginx/sites-enabled/$CONF
+printf '%s\n' \
+  "server { " \
+  "	listen 80; " \
+  "	listen [::]:80; " \
+  "	server_name $DOMAINE; " \
+  "	root /home/$USER/$CONF; " \
+  "	index index.html index.htm index.nginx-debian.html; " \
+  " " \
+  "	server_name _; " \
+  " " \
+  "	location / { " \
+  "		try_files \$uri \$uri/ =404; " \
+  "	} " \
+  "	location ~* ^.+\.(xml|ogg|ogv|svg|svgz|eot|otf|woff|)$ " \
+  "	{ " \
+  "		access_log off; " \
+  "		log_not_found off; " \
+  "		expires max; " \
+  "	} " \
+  "} " \
+  > /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 754 /etc/nginx/sites-enabled/$CONF

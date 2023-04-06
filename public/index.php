@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/assets/style/main.css">
+    <link rel="stylesheet" href="src/assets/style/main.css">
     <title></title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="section_form_user_title">
             <h1 class="size-35">Remplis le form tout de suite</h1>
         </div>
-        <form id="formEdit" action="../src/addUser.php" method="POST" class="section_form_user_form form_global">
+        <form id="formEdit" action="src/addUser.php" method="POST" class="section_form_user_form form_global">
             <div class="group_form">
                 <div class="group_input">
                     <label for="name_user">Nom d'utilisateur</label>

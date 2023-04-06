@@ -9,7 +9,7 @@ if(!empty($_POST)){
             $nameUser = $_POST['name_user'];
             $keyUser = $_POST['key_user'];
 
-            $script1 = shell_exec("ssh heticusr@40.66.43.209 \"bash -s\" < ../bash/script.sh \"'$nameUser' '$keyUser'\"");
+            $script1 = shell_exec("ssh heticusr@40.66.43.209 \"bash -s\" < ../bash/script.sh \"$nameUser $keyUser\"");
             echo "<pre>$script1</pre>";
     }
     //header("Location: homepage.php");

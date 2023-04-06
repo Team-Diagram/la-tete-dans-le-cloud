@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/**
+ * @license
+ *
+ * Font Family: Familjen Grotesk
+ * Designed by: Familjen STHLM AB
+ * URL: https://www.fontshare.com/fonts/familjen-grotesk
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Familjen Grotesk Regular
+ * Familjen Grotesk Medium
+ * Familjen Grotesk Semi Bold
+ * Familjen Grotesk Bold
+ *
+*/
+@font-face {
+  font-family: "FamiljenGrotesk-Regular";
+  src: url("../fonts/FamiljenGrotesk-Regular.woff2") format("woff2"), url("../fonts/FamiljenGrotesk-Regular.woff") format("woff"), url("../fonts/FamiljenGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FamiljenGrotesk-Medium";
+  src: url("../fonts/FamiljenGrotesk-Medium.woff2") format("woff2"), url("../fonts/FamiljenGrotesk-Medium.woff") format("woff"), url("../fonts/FamiljenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FamiljenGrotesk-SemiBold";
+  src: url("../fonts/FamiljenGrotesk-SemiBold.woff2") format("woff2"), url("../fonts/FamiljenGrotesk-SemiBold.woff") format("woff"), url("../fonts/FamiljenGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FamiljenGrotesk-Bold";
+  src: url("../fonts/FamiljenGrotesk-Bold.woff2") format("woff2"), url("../fonts/FamiljenGrotesk-Bold.woff") format("woff"), url("../fonts/FamiljenGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Bold
+ * Satoshi Black
+ *
+*/
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "FamiljenGrotesk-Bold", sans-serif;
+}
+
+p, li, a, button, span, input, label, select, textarea {
+  font-family: "Satoshi-Regular", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+}
+
+p, input, select, label, a, li {
+  line-height: 1.3em;
+}
+
+h1.color-primary, h2.color-primary, h3.color-primary, h4.color-primary, h5.color-primary, h6.color-primary, p.color-primary, span.color-primary, input.color-primary, select.color-primary, label.color-primary, a.color-primary, li.color-primary {
+  color: #120037 !important;
+}
+
+h1.color-white, h2.color-white, h3.color-white, h4.color-white, h5.color-white, h6.color-white, p.color-white, span.color-white, input.color-white, select.color-white, label.color-white, a.color-white, li.color-white {
+  color: #FFFFFF !important;
+}
+
+h1.color-black, h2.color-black, h3.color-black, h4.color-black, h5.color-black, h6.color-black, p.color-black, span.color-black, input.color-black, select.color-black, label.color-black, a.color-black, li.color-black {
+  color: #000000 !important;
+}
+
+h1.size-67, h2.size-67, h3.size-67, h4.size-67, h5.size-67, h6.size-67, p.size-67, span.size-67, input.size-67, select.size-67, label.size-67, a.size-67, li.size-67 {
+  font-size: 67px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(67px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(67px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(67px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(67px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(67px - 28px);
+    }
+  }*/
+}
+
+h1.size-47, h2.size-47, h3.size-47, h4.size-47, h5.size-47, h6.size-47, p.size-47, span.size-47, input.size-47, select.size-47, label.size-47, a.size-47, li.size-47 {
+  font-size: 47px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(47px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(47px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(47px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(47px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(47px - 28px);
+    }
+  }*/
+}
+
+h1.size-45, h2.size-45, h3.size-45, h4.size-45, h5.size-45, h6.size-45, p.size-45, span.size-45, input.size-45, select.size-45, label.size-45, a.size-45, li.size-45 {
+  font-size: 45px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(45px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(45px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(45px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(45px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(45px - 28px);
+    }
+  }*/
+}
+
+h1.size-40, h2.size-40, h3.size-40, h4.size-40, h5.size-40, h6.size-40, p.size-40, span.size-40, input.size-40, select.size-40, label.size-40, a.size-40, li.size-40 {
+  font-size: 40px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(40px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(40px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(40px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(40px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(40px - 28px);
+    }
+  }*/
+}
+
+h1.size-35, h2.size-35, h3.size-35, h4.size-35, h5.size-35, h6.size-35, p.size-35, span.size-35, input.size-35, select.size-35, label.size-35, a.size-35, li.size-35 {
+  font-size: 35px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(35px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(35px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(35px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(35px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(35px - 28px);
+    }
+  }*/
+}
+
+h1.size-25, h2.size-25, h3.size-25, h4.size-25, h5.size-25, h6.size-25, p.size-25, span.size-25, input.size-25, select.size-25, label.size-25, a.size-25, li.size-25 {
+  font-size: 25px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(25px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(25px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(25px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(25px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(25px - 28px);
+    }
+  }*/
+}
+
+h1.size-23, h2.size-23, h3.size-23, h4.size-23, h5.size-23, h6.size-23, p.size-23, span.size-23, input.size-23, select.size-23, label.size-23, a.size-23, li.size-23 {
+  font-size: 23px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(23px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(23px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(23px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(23px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(23px - 28px);
+    }
+  }*/
+}
+
+h1.size-18, h2.size-18, h3.size-18, h4.size-18, h5.size-18, h6.size-18, p.size-18, span.size-18, input.size-18, select.size-18, label.size-18, a.size-18, li.size-18 {
+  font-size: 18px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(18px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(18px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(18px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(18px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(18px - 28px);
+    }
+  }*/
+}
+
+h1.size-16, h2.size-16, h3.size-16, h4.size-16, h5.size-16, h6.size-16, p.size-16, span.size-16, input.size-16, select.size-16, label.size-16, a.size-16, li.size-16 {
+  font-size: 16px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(16px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(16px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(16px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(16px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(16px - 28px);
+    }
+  }*/
+}
+
+h1.size-13, h2.size-13, h3.size-13, h4.size-13, h5.size-13, h6.size-13, p.size-13, span.size-13, input.size-13, select.size-13, label.size-13, a.size-13, li.size-13 {
+  font-size: 13px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(13px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(13px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(13px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(13px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(13px - 28px);
+    }
+  }*/
+}
+
+h1.size-11, h2.size-11, h3.size-11, h4.size-11, h5.size-11, h6.size-11, p.size-11, span.size-11, input.size-11, select.size-11, label.size-11, a.size-11, li.size-11 {
+  font-size: 11px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(11px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(11px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(11px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(11px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(11px - 28px);
+    }
+  }*/
+}
+
+h1.font-light, h2.font-light, h3.font-light, h4.font-light, h5.font-light, h6.font-light, p.font-light, span.font-light, input.font-light, select.font-light, label.font-light, a.font-light, li.font-light {
+  font-family: "Satoshi-Light", sans-serif !important;
+}
+
+h1.font-regular, h2.font-regular, h3.font-regular, h4.font-regular, h5.font-regular, h6.font-regular, p.font-regular, span.font-regular, input.font-regular, select.font-regular, label.font-regular, a.font-regular, li.font-regular {
+  font-family: "Satoshi-Regular", sans-serif !important;
+}
+
+h1.font-medium, h2.font-medium, h3.font-medium, h4.font-medium, h5.font-medium, h6.font-medium, p.font-medium, span.font-medium, input.font-medium, select.font-medium, label.font-medium, a.font-medium, li.font-medium {
+  font-family: "Satoshi-Medium", sans-serif !important;
+}
+
+h1.font-bold, h2.font-bold, h3.font-bold, h4.font-bold, h5.font-bold, h6.font-bold, p.font-bold, span.font-bold, input.font-bold, select.font-bold, label.font-bold, a.font-bold, li.font-bold {
+  font-family: "Satoshi-Bold", sans-serif !important;
+}
+
+h1.font-black, h2.font-black, h3.font-black, h4.font-black, h5.font-black, h6.font-black, p.font-black, span.font-black, input.font-black, select.font-black, label.font-black, a.font-black, li.font-black {
+  font-family: "Satoshi-Black", sans-serif !important;
+}
+
+h1.font-italic, h2.font-italic, h3.font-italic, h4.font-italic, h5.font-italic, h6.font-italic, p.font-italic, span.font-italic, input.font-italic, select.font-italic, label.font-italic, a.font-italic, li.font-italic {
+  font-family: "Satoshi-Italic", sans-serif !important;
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.group_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.group_input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+a.button-global, button.button-global {
+  cursor: pointer;
+  width: max-content;
+  padding: 10px 25px;
+  font-family: "Satoshi-Medium", sans-serif !important;
+  font-size: 16px;
+  line-height: 1em;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+@media (max-width: 768px) {
+  a.button-global, button.button-global {
+    font-size: 15px;
+  }
+}
+
+a.button-primary, button.button-primary {
+  background: #3032FF;
+  border: 2px solid #3032FF;
+  color: #FFFFFF;
+}
+a.button-primary:hover, button.button-primary:hover {
+  background: #FFFFFF;
+  color: #3032FF;
+}
+
+a.button-secondary, button.button-secondary {
+  border: 2px solid #3032FF;
+  background: #FFFFFF;
+  color: #3032FF;
+}
+a.button-secondary:hover, button.button-secondary:hover {
+  background: #3032FF;
+  color: #FFFFFF;
+}
+
+.page_index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section_form_user {
+  background: #FFFFFF;
+  border: 0.5px solid #EAEAEA;
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
+  border-radius: 14px;
+  padding: 50px;
+  width: 80%;
+  max-width: 500px;
+}
+.section_form_user_title {
+  margin-bottom: 20px;
+}
+.section_form_user form button {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

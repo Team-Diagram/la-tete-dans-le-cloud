@@ -1,0 +1,40 @@
+//BUTTONS
+a, button {
+  &.button-global {
+    cursor: pointer;
+    width: max-content;
+    padding: 10px 25px;
+    font-family: "Satoshi-Medium", sans-serif !important;
+    font-size: 16px;
+    line-height: 1em;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out 0.1s;
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+}
+
+
+a, button {
+  &.button-primary {
+    background: $blue;
+    border: 2px solid $blue;
+    color: $white;
+    &:hover{
+      background: $white;
+      color: $blue;
+    }
+  }
+}
+a, button {
+  &.button-secondary {
+    border: 2px solid $blue;
+    background: $white;
+    color: $blue;
+    &:hover{
+      background: $blue;
+      color: $white;
+    }
+  }
+}

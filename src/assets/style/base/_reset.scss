@@ -1,0 +1,11 @@
+body{
+  margin: auto;
+  min-height: 100vh;
+  display: inline-block;
+  width: 100%;
+  background-color: $greyBackground;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}

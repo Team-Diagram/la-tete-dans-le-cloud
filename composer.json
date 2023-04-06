@@ -1,9 +1,0 @@
-{
-    "name": "la-tete-dans-le-cloud/la-tete-dans-le-cloud",
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
-    "require": {}
-}

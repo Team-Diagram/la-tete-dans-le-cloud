@@ -1,5 +1,5 @@
 #!/bin/bash
-USER =$1
+USER=$1
 CONF=$2
 DOMAINE=$3
 
@@ -19,7 +19,7 @@ fi
 
 sudo chmod 755 /etc/nginx/sites-enabled
 
-sudo mkdir /etc/nginx/sites-enabled/$CONF
+sudo touch /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 757 /etc/nginx/sites-enabled/$CONF
 

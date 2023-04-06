@@ -1,6 +1,5 @@
-# ssh heticusr@40.66.43.209 "bash -s" < ./script.sh "'test2' 'cle ssh'"
 #!/bin/bash
-RSA="$2"
+RSA=$2
 
 sudo useradd -m $1
 sudo chmod 755 /home/$1

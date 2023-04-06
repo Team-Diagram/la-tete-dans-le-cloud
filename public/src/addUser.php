@@ -9,7 +9,7 @@ if(!empty($_POST)){
         $nameUser = $_POST['name_user'];
         $keyUser = $_POST['key_user'];
 
-        $script1 = shell_exec(" bash /var/www/html/la-tete-dans-le-cloud/bash/create_user.sh $nameUser '$keyUser'");
+        $script1 = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/create_user.sh $nameUser '$keyUser'");
         echo "<pre>$script1</pre>";
 
     }

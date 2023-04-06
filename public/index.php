@@ -4,4 +4,6 @@
         die;
     }
 
+    var_dump("hello word");
+
 ?>

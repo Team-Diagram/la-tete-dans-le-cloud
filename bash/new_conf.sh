@@ -17,7 +17,7 @@ then
   exit 0
 fi
 
-sudo mkidr /home/$USER/$CONF
+sudo mkdir /home/$USER/$CONF
 
 sudo touch /home/$USER/$CONF/index.html
 

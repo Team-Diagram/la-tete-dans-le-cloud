@@ -1,6 +1,6 @@
 #!/bin/bash
-USER=$2
-DATABASE=$1
+USER=$1
+DATABASE=$2
 PASSWORD=$3
 
 

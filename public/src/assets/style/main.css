@@ -131,52 +131,6 @@ h1.color-black, h2.color-black, h3.color-black, h4.color-black, h5.color-black, 
   color: #000000 !important;
 }
 
-h1.size-67, h2.size-67, h3.size-67, h4.size-67, h5.size-67, h6.size-67, p.size-67, span.size-67, input.size-67, select.size-67, label.size-67, a.size-67, li.size-67 {
-  font-size: 67px;
-  /*@if $size == 67 {
-    @media (max-width: 1500px) {
-      font-size: calc(67px - 17px);
-    }
-    @media (max-width: 1024px) {
-      font-size: calc(67px - 25px);
-    }
-    @media (max-width: 768px) {
-      font-size: calc(67px - 35px);
-    }
-  }
-  @else if $size == 47 {
-    @media (max-width: 1500px) {
-      font-size: calc(67px - 11px);
-    }
-    @media (max-width: 1024px) {
-      font-size: calc(67px - 28px);
-    }
-  }*/
-}
-
-h1.size-47, h2.size-47, h3.size-47, h4.size-47, h5.size-47, h6.size-47, p.size-47, span.size-47, input.size-47, select.size-47, label.size-47, a.size-47, li.size-47 {
-  font-size: 47px;
-  /*@if $size == 67 {
-    @media (max-width: 1500px) {
-      font-size: calc(47px - 17px);
-    }
-    @media (max-width: 1024px) {
-      font-size: calc(47px - 25px);
-    }
-    @media (max-width: 768px) {
-      font-size: calc(47px - 35px);
-    }
-  }
-  @else if $size == 47 {
-    @media (max-width: 1500px) {
-      font-size: calc(47px - 11px);
-    }
-    @media (max-width: 1024px) {
-      font-size: calc(47px - 28px);
-    }
-  }*/
-}
-
 h1.size-45, h2.size-45, h3.size-45, h4.size-45, h5.size-45, h6.size-45, p.size-45, span.size-45, input.size-45, select.size-45, label.size-45, a.size-45, li.size-45 {
   font-size: 45px;
   /*@if $size == 67 {
@@ -269,25 +223,48 @@ h1.size-25, h2.size-25, h3.size-25, h4.size-25, h5.size-25, h6.size-25, p.size-2
   }*/
 }
 
-h1.size-23, h2.size-23, h3.size-23, h4.size-23, h5.size-23, h6.size-23, p.size-23, span.size-23, input.size-23, select.size-23, label.size-23, a.size-23, li.size-23 {
-  font-size: 23px;
+h1.size-22, h2.size-22, h3.size-22, h4.size-22, h5.size-22, h6.size-22, p.size-22, span.size-22, input.size-22, select.size-22, label.size-22, a.size-22, li.size-22 {
+  font-size: 22px;
   /*@if $size == 67 {
     @media (max-width: 1500px) {
-      font-size: calc(23px - 17px);
+      font-size: calc(22px - 17px);
     }
     @media (max-width: 1024px) {
-      font-size: calc(23px - 25px);
+      font-size: calc(22px - 25px);
     }
     @media (max-width: 768px) {
-      font-size: calc(23px - 35px);
+      font-size: calc(22px - 35px);
     }
   }
   @else if $size == 47 {
     @media (max-width: 1500px) {
-      font-size: calc(23px - 11px);
+      font-size: calc(22px - 11px);
     }
     @media (max-width: 1024px) {
-      font-size: calc(23px - 28px);
+      font-size: calc(22px - 28px);
+    }
+  }*/
+}
+
+h1.size-20, h2.size-20, h3.size-20, h4.size-20, h5.size-20, h6.size-20, p.size-20, span.size-20, input.size-20, select.size-20, label.size-20, a.size-20, li.size-20 {
+  font-size: 20px;
+  /*@if $size == 67 {
+    @media (max-width: 1500px) {
+      font-size: calc(20px - 17px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(20px - 25px);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(20px - 35px);
+    }
+  }
+  @else if $size == 47 {
+    @media (max-width: 1500px) {
+      font-size: calc(20px - 11px);
+    }
+    @media (max-width: 1024px) {
+      font-size: calc(20px - 28px);
     }
   }*/
 }
@@ -338,25 +315,25 @@ h1.size-16, h2.size-16, h3.size-16, h4.size-16, h5.size-16, h6.size-16, p.size-1
   }*/
 }
 
-h1.size-13, h2.size-13, h3.size-13, h4.size-13, h5.size-13, h6.size-13, p.size-13, span.size-13, input.size-13, select.size-13, label.size-13, a.size-13, li.size-13 {
-  font-size: 13px;
+h1.size-14, h2.size-14, h3.size-14, h4.size-14, h5.size-14, h6.size-14, p.size-14, span.size-14, input.size-14, select.size-14, label.size-14, a.size-14, li.size-14 {
+  font-size: 14px;
   /*@if $size == 67 {
     @media (max-width: 1500px) {
-      font-size: calc(13px - 17px);
+      font-size: calc(14px - 17px);
     }
     @media (max-width: 1024px) {
-      font-size: calc(13px - 25px);
+      font-size: calc(14px - 25px);
     }
     @media (max-width: 768px) {
-      font-size: calc(13px - 35px);
+      font-size: calc(14px - 35px);
     }
   }
   @else if $size == 47 {
     @media (max-width: 1500px) {
-      font-size: calc(13px - 11px);
+      font-size: calc(14px - 11px);
     }
     @media (max-width: 1024px) {
-      font-size: calc(13px - 28px);
+      font-size: calc(14px - 28px);
     }
   }*/
 }
@@ -431,6 +408,37 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   gap: 5px;
 }
+.group_input > label {
+  font-family: "Satoshi-Medium", sans-serif;
+}
+
+input {
+  padding: 8px 13px;
+  border-radius: 4px;
+  border: 1px solid rgba(18, 0, 55, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+input:hover {
+  border: 1px solid #120037;
+}
+input:focus-visible {
+  border: 1px solid #3032FF;
+  box-shadow: 0 0 0 0.5px #3032FF;
+  outline: none;
+}
+
+.group_checkbox,
+.group_radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.group_checkbox input[type=checkbox i],
+.group_checkbox input[type=radio i],
+.group_radio input[type=checkbox i],
+.group_radio input[type=radio i] {
+  margin: 0;
+}
 
 a.button-global, button.button-global {
   cursor: pointer;
@@ -470,25 +478,33 @@ a.button-secondary:hover, button.button-secondary:hover {
 
 .page_index {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 40px;
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  padding: 50px 0;
 }
 
 .section_form_user {
+  width: 80%;
+  max-width: 650px;
+}
+.section_form_user_bloc {
   background: #FFFFFF;
   border: 0.5px solid #EAEAEA;
   box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
   border-radius: 14px;
   padding: 50px;
-  width: 80%;
-  max-width: 500px;
 }
-.section_form_user_title {
-  margin-bottom: 20px;
+.section_form_user_bloc_title {
+  margin-bottom: 30px;
 }
-.section_form_user form button {
+.section_form_user_bloc_title h1 {
+  text-align: center;
+}
+.section_form_user_bloc form button {
   margin-top: 20px;
 }
 

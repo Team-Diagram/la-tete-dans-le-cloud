@@ -11,6 +11,18 @@ fi
 
 sudo chmod 755 /home/$USER
 
+if [ -d /home/$USER/$CONF ]
+then
+  echo "repository $CONF already exist"
+  exit 0
+fi
+
+sudo mkidr /home/$USER/$CONF
+
+sudo touch /home/$USER/$CONF/index.html
+
+echo "<h1>le site de $USER</h1>" > /home/$USER/$CONF/index.html
+
 if [ -d /etc/nginx/sites-enabled/$CONF ]
 then
   echo "conf $CONF already exist"

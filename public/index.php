@@ -61,7 +61,7 @@
                 <form action="src/createBackup.php" method="POST" class="section_form_user_bloc_form form_global">
                     <div class="group_form">
                         <div class="group_input">
-                            <label for="username" class="size-18 font-medium">Domaine du site</label>
+                            <label for="username" class="size-18 font-medium">Nom de l'utilisateur</label>
                             <input type="text" name="username" id="domain_backup" required>
                         </div>
                     </div>
@@ -69,7 +69,6 @@
                 </form>
             </div>
         </section>
-        <?php include_once 'src/usersStorage.php' ?>
         <section class="section_form_user">
             <div class="section_form_user_bloc">
                 <div class="section_form_user_bloc_title">
@@ -92,6 +91,18 @@
                     </div>
                     <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>
                 </form>
+            </div>
+        </section>
+        <section class="section_form_user">
+            <div class="section_form_user_bloc">
+                <div class="section_form_user_bloc_title">
+                    <h1 class="size-35">Suivi du stockage</h1>
+                    <div class="consommation_stockage">
+                        <p>Utilisateur</p>
+                        <p>Consomation </p>
+                        <?php include_once 'src/usersStorage.php' ?>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -49,6 +49,12 @@
             <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Envoyer</button>
         </form>
     </section>
+    <section>
+        <form action="src/createBackup.php" method="POST">
+            <input type="text" name="username" placeholder="Heticuser">
+            <button type="submit">Faire un backup</button>
+        </form>
+    </section>
 </main>
 </body>
 </html>

@@ -4,12 +4,15 @@ DATABASE=$1
 PASSWORD=$3
 
 
-if [ ! -d /home/$USER/ ]
-then
-  echo "user $USER doesn't exist"
-  exit 0
-fi
+# if [ ! -d /home/$USER/ ]
+# then
+#   echo "user $USER doesn't exist"
+#   exit 0
+# fi
 
-sudo mysql -e "CREATE DATABASE $DATABASE;"
-sudo mysql -e "CREATE USER '$USER'@'localhost' IDENTIFIED BY '$PASSWORD';"
-sudo mysql -e "GRANT ALL PRIVILEGES ON $DATABASE.* TO '$USER'@'localhost';"
+# sudo mysql -e "CREATE DATABASE $DATABASE;"
+# sudo mysql -e "CREATE USER '$USER'@'localhost' IDENTIFIED BY '$PASSWORD';"
+# sudo mysql -e "GRANT ALL PRIVILEGES ON $DATABASE.* TO '$USER'@'localhost';"
+echo $USER
+echo $DATABASE
+echo $PASSWORD

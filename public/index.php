@@ -28,6 +28,7 @@
                     <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Envoyer</button>
                 </form>
             </div>
+<<<<<<< HEAD
         </section>
         <section class="section_form_user">
             <div class="section_form_user_bloc">
@@ -70,5 +71,27 @@
             </div>
         </section>
     </main>
+=======
+            <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Envoyer</button>
+        </form>
+        <?php include_once 'src/usersStorage.php' ?>
+
+    </section>
+    <section>
+        <form action="src/createBackup.php" method="POST">
+            <input type="text" name="username" placeholder="Heticuser">
+            <button type="submit">Faire un backup</button>
+        </form>
+    </section>
+    <section>
+        <form action="/src/addDb.php" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="database" placeholder="Database">
+            <input type="text" name="password" placeholder="password">
+            <button type="submit">Creer la base de donnée</button>
+        </form>
+    </section>
+</main>
+>>>>>>> f7e1f63450ad3f239f3ee0248be24861d3bda93f
 </body>
 </html>

@@ -11,5 +11,5 @@ then
 fi
 
 sudo mysql -e "CREATE DATABASE $DATABASE;"
-sudo myslq -e "CREATE USER '$USER'@'localhost' IDENTIFIED BY '$3';"
-sudo myslq -e "GRANT ALL PRIVILEGES ON $DATABASE.* TO '$USER'@'localhost';"
+sudo mysql -e "CREATE USER '$USER'@'localhost' IDENTIFIED BY '$PASSWORD';"
+sudo mysql -e "GRANT ALL PRIVILEGES ON $DATABASE.* TO '$USER'@'localhost';"

@@ -46,6 +46,7 @@
                     </div>-->
                 </div>
             </div>
+            <?php include_once 'src/usersStorage.php' ?>
             <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Envoyer</button>
         </form>
     </section>

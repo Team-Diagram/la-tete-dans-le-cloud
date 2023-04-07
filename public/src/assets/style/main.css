@@ -511,6 +511,7 @@ a.button-secondary:hover, button.button-secondary:hover {
 .consommation_stockage {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .users-storage {

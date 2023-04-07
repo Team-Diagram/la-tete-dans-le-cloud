@@ -34,7 +34,7 @@
                 <div class="section_form_user_bloc_title">
                     <h1 class="size-35">Ngnix</h1>
                 </div>
-                <form id="formNgnix" action="src/addNgnix.php" method="POST" class="section_form_user_bloc_form form_global">
+                <form id="formNgnix" action="src/addNginx.php" method="POST" class="section_form_user_bloc_form form_global">
                     <div class="group_form">
                         <div class="group_input">
                             <label for="user_ngnix" class="size-18 font-medium">Nom d'utilisateur</label>
@@ -70,14 +70,6 @@
             </div>
         </section>
         <?php include_once 'src/usersStorage.php' ?>
-        <section>
-            <form action="/src/addDb.php" method="POST">
-                <input type="text" name="username" placeholder="Username">
-                <input type="text" name="database" placeholder="Database">
-                <input type="text" name="password" placeholder="password">
-                <button type="submit">Creer la base de donnée</button>
-            </form>
-        </section>
         <section class="section_form_user">
             <div class="section_form_user_bloc">
                 <div class="section_form_user_bloc_title">
@@ -86,16 +78,16 @@
                 <form action="src/addDb.php" method="POST" class="section_form_user_bloc_form form_global">
                     <div class="group_form">
                         <div class="group_input">
-                            <label for="user_database" class="size-18 font-medium">Nom utilisateur</label>
-                            <input type="text" name="user_database" id="user_database" required>
+                            <label for="username" class="size-18 font-medium">Nom utilisateur</label>
+                            <input type="text" name="username" id="user_database" required>
                         </div>
                         <div class="group_input">
-                            <label for="db_database" class="size-18 font-medium">Nom bdd</label>
-                            <input type="text" name="db_database" id="db_database" required>
+                            <label for="database" class="size-18 font-medium">Nom bdd</label>
+                            <input type="text" name="database" id="db_database" required>
                         </div>
                         <div class="group_input">
-                            <label for="password_database" class="size-18 font-medium">Mot de passe</label>
-                            <input type="text" name="password_database" id="password_database" required>
+                            <label for="password" class="size-18 font-medium">Mot de passe</label>
+                            <input type="text" name="password" id="password_database" required>
                         </div>
                     </div>
                     <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>

@@ -13,6 +13,6 @@ PASSWORD=$3
 # sudo mysql -e "CREATE DATABASE $DATABASE;"
 # sudo mysql -e "CREATE USER '$USER'@'localhost' IDENTIFIED BY '$PASSWORD';"
 # sudo mysql -e "GRANT ALL PRIVILEGES ON $DATABASE.* TO '$USER'@'localhost';"
-echo USER
-echo DATABASE
-echo PASSWORD
+echo $USER
+echo $DATABASE
+echo $PASSWORD

@@ -60,6 +60,7 @@
             <input type="text" name="username" placeholder="Username">
             <input type="text" name="database" placeholder="Database">
             <input type="text" name="password" placeholder="password">
+            <button type="submit">Creer la base de donnée</button>
         </form>
     </section>
 </main>

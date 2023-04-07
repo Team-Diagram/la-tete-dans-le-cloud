@@ -1,7 +1,4 @@
 <?php
-//var_dump($_POST);
-$string1 = "ce que je veux";
-$string2 = "ce que je veux 2";
 
 if(!empty($_POST)){
     if(isset($_POST['name_user'],$_POST['key_user'],$_POST['server_user'],$_POST['bdd_user'])
@@ -11,7 +8,6 @@ if(!empty($_POST)){
 
         $script1 = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/create_user.sh $nameUser '$keyUser'");
         echo "<pre>$script1</pre>";
-
     }
 }
 header("Location: /index.php");

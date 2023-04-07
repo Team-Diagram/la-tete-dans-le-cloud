@@ -16,39 +16,39 @@ $colors: ("primary" : $primary, "white" : $white, "black" : $black);
 
 @each $name, $color in $colors {
   h1, h2, h3, h4, h5, h6, p, span, input, select, label, a, li {
-      &.color-#{$name} {
-        color: $color !important;
-      }
+    &.color-#{$name} {
+      color: $color !important;
+    }
   }
 }
 
-$fontSizes: ("67" : 67, "47" : 47, "45" : 45, "40" : 40, "35" : 35, "25" : 25, "23" : 23, "18" : 18, "16" : 16, "13" : 13, "11" : 11);
+$fontSizes: ("45" : 45, "40" : 40, "35" : 35, "25" : 25, "22" : 22, "20" : 20, "18" : 18, "16" : 16, "14" : 14, "11" : 11);
 
 @each $sizeName, $size in $fontSizes {
   h1, h2, h3, h4, h5, h6, p, span, input, select, label, a, li {
     &.size-#{$sizeName} {
-        font-size: #{$size}px;
-        /*@if $size == 67 {
-          @media (max-width: 1500px) {
-            font-size: calc(#{$size}px - 17px);
-          }
-          @media (max-width: 1024px) {
-            font-size: calc(#{$size}px - 25px);
-          }
-          @media (max-width: 768px) {
-            font-size: calc(#{$size}px - 35px);
-          }
+      font-size: #{$size}px;
+      /*@if $size == 67 {
+        @media (max-width: 1500px) {
+          font-size: calc(#{$size}px - 17px);
         }
-        @else if $size == 47 {
-          @media (max-width: 1500px) {
-            font-size: calc(#{$size}px - 11px);
-          }
-          @media (max-width: 1024px) {
-            font-size: calc(#{$size}px - 28px);
-          }
-        }*/
+        @media (max-width: 1024px) {
+          font-size: calc(#{$size}px - 25px);
+        }
+        @media (max-width: 768px) {
+          font-size: calc(#{$size}px - 35px);
+        }
       }
+      @else if $size == 47 {
+        @media (max-width: 1500px) {
+          font-size: calc(#{$size}px - 11px);
+        }
+        @media (max-width: 1024px) {
+          font-size: calc(#{$size}px - 28px);
+        }
+      }*/
     }
+  }
 }
 
 

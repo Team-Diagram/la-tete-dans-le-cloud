@@ -55,6 +55,13 @@
             <button type="submit">Faire un backup</button>
         </form>
     </section>
+    <section>
+        <form action="/src/addDb.php" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="database" placeholder="Database">
+            <input type="text" name="password" placeholder="password">
+        </form>
+    </section>
 </main>
 </body>
 </html>

@@ -1,11 +1,10 @@
-#! /bin/bash
+#!/bin/bash
+USERNAME=$1
+DATE=$(date '+%d-%m-%Y')
 
-username=$1
-
-if [ ! -d /home/$username/ ]
+if [ ! -d /home/$USERNAME/ ]
 then
   exit 0
 fi
 
-date=$(date '+%d-%m-%Y')
-tar cvzf /tmp/"$username"_"$date".tar --directory=/home/ "$username"
+tar cvzf /tmp/"$USERNAME"_"$DATE".tar --directory=/home/ "$USERNAME"

@@ -1,23 +1,24 @@
 #!/bin/bash
 RSA=$2
+USERNAME=$1
 
-sudo useradd -m $1
-sudo chmod 755 /home/$1
+sudo useradd -m $USERNAME
+sudo chmod 755 /home/$USERNAME
 
-if [ ! -d /home/$1/.ssh ]
+if [ ! -d /home/$USERNAME/.ssh ]
 then
-sudo mkdir /home/$1/.ssh
+sudo mkdir /home/$USERNAME/.ssh
 fi
 
-sudo chmod 755 /home/$1/.ssh
+sudo chmod 755 /home/$USERNAME/.ssh
 
-if [ ! -f /home/$1/.ssh/authorized_keys ]
+if [ ! -f /home/$USERNAME/.ssh/authorized_keys ]
 then
-sudo touch /home/$1/.ssh/authorized_keys
+sudo touch /home/$USERNAME/.ssh/authorized_keys
 fi
 
-sudo chmod 757 /home/$1/.ssh/authorized_keys
+sudo chmod 757 /home/$USERNAME/.ssh/authorized_keys
 
-echo $RSA >> /home/$1/.ssh/authorized_keys
+echo $RSA >> /home/$USERNAME/.ssh/authorized_keys
 
-sudo chmod 754 /home/$1/.ssh/authorized_keys
+sudo chmod 754 /home/$USERNAME/.ssh/authorized_keys

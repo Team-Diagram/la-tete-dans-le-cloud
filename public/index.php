@@ -58,7 +58,7 @@
                 <div class="section_form_user_bloc_title">
                     <h1 class="size-35">Backup</h1>
                 </div>
-                <form action="src/addBackup.php" method="POST" class="section_form_user_bloc_form form_global">
+                <form action="src/createBackup.php" method="POST" class="section_form_user_bloc_form form_global">
                     <div class="group_form">
                         <div class="group_input">
                             <label for="domain_backup" class="size-18 font-medium">Domaine du site</label>

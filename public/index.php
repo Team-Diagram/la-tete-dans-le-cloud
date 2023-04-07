@@ -98,10 +98,10 @@
                 <div class="section_form_user_bloc_title">
                     <h1 class="size-35">Suivi du stockage</h1>
                     <div class="consommation_stockage">
-                        <p>Utilisateur</p>
-                        <p>Consomation </p>
-                        <?php include_once 'src/usersStorage.php' ?>
+                        <p class="size-18 font-medium">Utilisateur</p>
+                        <p class="size-18 font-medium">Consomation </p>
                     </div>
+                    <?php include_once 'src/usersStorage.php' ?>
                 </div>
             </div>
         </section>

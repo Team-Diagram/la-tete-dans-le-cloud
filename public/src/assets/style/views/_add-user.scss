@@ -31,3 +31,18 @@
     }
   }
 }
+
+.consommation_stockage{
+  display: flex;
+  justify-content: space-between;
+}
+.users-storage{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .user{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

@@ -508,4 +508,20 @@ a.button-secondary:hover, button.button-secondary:hover {
   margin-top: 20px;
 }
 
+.consommation_stockage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-storage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.users-storage .user {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */

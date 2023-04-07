@@ -1,9 +1,12 @@
 .page_index{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 40px;
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  padding: 50px 0;
 }
 
 .section_form_user{

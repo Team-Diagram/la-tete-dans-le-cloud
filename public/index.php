@@ -22,7 +22,7 @@
                         </div>
                         <div class="group_input">
                             <label for="key_user" class="size-18 font-medium">Clé publique</label>
-                            <input type="text" name="key_user" id="key_user" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6uFFRdQAGblfTsI4NV9NdVair87K8oWpPV9Dr4YVr1thutvFkE999r1YPNl65QQMsidi3R/I5md5ZhiD/XsJTZkEkGws4pgLIwEylzA8W1le1UpC2OlUPxSf0c5mR9+1Fk23/6De1y2ZI66ECPSoZ1LgOuG1LZaw7iJu5swZTLpO9JdeYg9zQ3SxOPQMTmT7TluJfUGNB6ijmydLHZ6XKD1IpknIMWnuWaKPCBulQQa5gorg2vjAZVBCZpTKVZWo9Bb3Un4C3uhA5vJC9BhYzp4FU2coLTGPkV283SMHRSQz3HfOalmwulfpy44OMk6NDuO+XzyAjdieAXpNAktPpn2JdQ8dhVRy1GfDHuUemV+rauqWLpqT44M4//BevdU+/bKYjyue7KPLOXgyxdb+4IMEOT6q8TVL2v0fyCY3sN8Rw4IzpQNJAoY00yC9kgGr1A4LTV0c2QsxKayXWLBsP3XBXQPyyF+HCbMR2abiN5uY2VvLn6gyaeAttj9KJP8k= pauli@LAPTOP-3R8HEBRQ" required>
+                            <input type="text" name="key_user" id="key_user" required>
                         </div>
                     </div>
                     <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Ajouter un utilisateur</button>

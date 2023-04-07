@@ -448,7 +448,7 @@ a.button-global, button.button-global {
   font-size: 16px;
   line-height: 1em;
   border-radius: 8px;
-  transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   a.button-global, button.button-global {

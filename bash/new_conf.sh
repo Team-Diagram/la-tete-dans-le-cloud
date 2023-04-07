@@ -19,6 +19,8 @@ fi
 
 sudo mkdir /home/$USER/$CONF
 
+sudo chmod 755 /home/$USER/$CONF/
+
 sudo touch /home/$USER/$CONF/index.html
 
 echo "<h1>le site de $USER</h1>" > /home/$USER/$CONF/index.html

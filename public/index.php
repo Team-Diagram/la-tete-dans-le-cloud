@@ -61,8 +61,8 @@
                 <form action="src/createBackup.php" method="POST" class="section_form_user_bloc_form form_global">
                     <div class="group_form">
                         <div class="group_input">
-                            <label for="domain_backup" class="size-18 font-medium">Domaine du site</label>
-                            <input type="text" name="domain_backup" id="domain_backup" required>
+                            <label for="username" class="size-18 font-medium">Domaine du site</label>
+                            <input type="text" name="username" id="domain_backup" required>
                         </div>
                     </div>
                     <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Faire un backup</button>

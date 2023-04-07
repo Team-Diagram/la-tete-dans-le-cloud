@@ -3,9 +3,6 @@
 # Get all users
 USERS=( $(getent passwd | awk -F: '{if ($6 ~ /^\/home/ && $3 >= 1000) print $1}') )
 
-# Display column title
-echo -e "user\t\tdiskusage"
-
 # Display user stockage used
 for USER in "${USERS[@]}"
 do

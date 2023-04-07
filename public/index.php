@@ -48,6 +48,8 @@
             </div>
             <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Envoyer</button>
         </form>
+        <?php include_once 'src/usersStorage.php' ?>
+
     </section>
     <section>
         <form action="src/createBackup.php" method="POST">

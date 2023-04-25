@@ -129,15 +129,15 @@
                         <form action="src/newPassword.php" method="POST" class="section_form_item_user_bloc_form form_global">
                             <div class="group_form">
                                 <div class="group_input">
-                                    <label for="database" class="size-18 font-medium">Nom utilisateur</label>
-                                    <input type="text" name="database" id="db_database" required>
+                                    <label for="username" class="size-18 font-medium">Nom utilisateur</label>
+                                    <input type="text" name="username" id="username" required>
                                 </div>
                                 <div class="group_input">
                                     <label for="password" class="size-18 font-medium">Nouveau mot de passe</label>
-                                    <input type="text" name="password" id="password_database" required>
+                                    <input type="text" name="password" id="password" required>
                                 </div>
                             </div>
-                            <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>
+                            <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Modifier le mot de passe</button>
                         </form>
                     </div>
                 </div>

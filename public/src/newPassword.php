@@ -10,4 +10,5 @@
             echo "<pre>$scriptNewPassword</pre>";
         }
     }
+    header("Location: /index.php");
 ?>

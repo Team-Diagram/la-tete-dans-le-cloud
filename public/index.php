@@ -5,104 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/style/main.css">
+    <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
     <title></title>
 </head>
 <body>
     <main class="page_index">
-        <section class="section_form_user">
-            <div class="section_form_user_bloc">
-                <div class="section_form_user_bloc_title">
-                    <h1 class="size-35">User</h1>
-                </div>
-                <form id="formUser" action="src/addUser.php" method="POST" class="section_form_user_bloc_form form_global">
-                    <div class="group_form">
-                        <div class="group_input">
-                            <label for="name_user" class="size-18 font-medium">Nom d'utilisateur</label>
-                            <input type="text" name="name_user" id="name_user" required>
-                        </div>
-                        <div class="group_input">
-                            <label for="key_user" class="size-18 font-medium">Clé publique</label>
-                            <input type="text" name="key_user" id="key_user" required>
-                        </div>
-                    </div>
-                    <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Ajouter un utilisateur</button>
-                </form>
+        <section class="section_filters">
+            <div class="section_filters_bloc">
+                <button class="section_filters_bloc_item active" id="btnCreate">Créer</button>
+                <button class="section_filters_bloc_item" id="btnMaintenance">Maintenir</button>
+                <button class="section_filters_bloc_item" id="btnStat">Visionner à travers les époques</button>
             </div>
         </section>
-        <section class="section_form_user">
-            <div class="section_form_user_bloc">
-                <div class="section_form_user_bloc_title">
-                    <h1 class="size-35">Ngnix</h1>
-                </div>
-                <form id="formNgnix" action="src/addNginx.php" method="POST" class="section_form_user_bloc_form form_global">
-                    <div class="group_form">
-                        <div class="group_input">
-                            <label for="user_ngnix" class="size-18 font-medium">Nom d'utilisateur</label>
-                            <input type="text" name="user_ngnix" id="user_ngnix" required>
+        <section class="section_form active">
+            <div class="section_form_item" id="formCreate">
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">User</h1>
                         </div>
-                        <div class="group_input">
-                            <label for="site_ngnix" class="size-18 font-medium">Nom du site</label>
-                            <input type="text" name="site_ngnix" id="site_ngnix" required>
-                        </div>
-                        <div class="group_input">
-                            <label for="domain_ngnix" class="size-18 font-medium">Domaine du site</label>
-                            <input type="text" name="domain_ngnix" id="domain_ngnix" required>
-                        </div>
+                        <form id="formUser" action="src/addUser.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="name_user" class="size-18 font-medium">Nom d'utilisateur</label>
+                                    <input type="text" name="name_user" id="name_user" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="key_user" class="size-18 font-medium">Clé publique</label>
+                                    <input type="text" name="key_user" id="key_user" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddUser" type="submit" name="submitAddUser">Ajouter un utilisateur</button>
+                        </form>
                     </div>
-                    <button class="button-global button-primary" id="submitAddNgnix" type="submit" name="submitAddNgnix">Envoyer</button>
-                </form>
-            </div>
-        </section>
-        <section class="section_form_user">
-            <div class="section_form_user_bloc">
-                <div class="section_form_user_bloc_title">
-                    <h1 class="size-35">Backup</h1>
                 </div>
-                <form action="src/createBackup.php" method="POST" class="section_form_user_bloc_form form_global">
-                    <div class="group_form">
-                        <div class="group_input">
-                            <label for="username" class="size-18 font-medium">Nom de l'utilisateur</label>
-                            <input type="text" name="username" id="domain_backup" required>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Ngnix</h1>
                         </div>
+                        <form id="formNgnix" action="src/addNginx.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="user_ngnix" class="size-18 font-medium">Nom d'utilisateur</label>
+                                    <input type="text" name="user_ngnix" id="user_ngnix" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="site_ngnix" class="size-18 font-medium">Nom du site</label>
+                                    <input type="text" name="site_ngnix" id="site_ngnix" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="domain_ngnix" class="size-18 font-medium">Domaine du site</label>
+                                    <input type="text" name="domain_ngnix" id="domain_ngnix" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddNgnix" type="submit" name="submitAddNgnix">Envoyer</button>
+                        </form>
                     </div>
-                    <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Faire un backup</button>
-                </form>
-            </div>
-        </section>
-        <section class="section_form_user">
-            <div class="section_form_user_bloc">
-                <div class="section_form_user_bloc_title">
-                    <h1 class="size-35">Base de données</h1>
                 </div>
-                <form action="src/addDb.php" method="POST" class="section_form_user_bloc_form form_global">
-                    <div class="group_form">
-                        <div class="group_input">
-                            <label for="username" class="size-18 font-medium">Nom utilisateur</label>
-                            <input type="text" name="username" id="user_database" required>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Base de données</h1>
                         </div>
-                        <div class="group_input">
-                            <label for="database" class="size-18 font-medium">Nom bdd</label>
-                            <input type="text" name="database" id="db_database" required>
-                        </div>
-                        <div class="group_input">
-                            <label for="password" class="size-18 font-medium">Mot de passe</label>
-                            <input type="text" name="password" id="password_database" required>
-                        </div>
+                        <form action="src/addDb.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="username" class="size-18 font-medium">Nom utilisateur</label>
+                                    <input type="text" name="username" id="user_database" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="database" class="size-18 font-medium">Nom bdd</label>
+                                    <input type="text" name="database" id="db_database" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="password" class="size-18 font-medium">Mot de passe</label>
+                                    <input type="text" name="password" id="password_database" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>
+                        </form>
                     </div>
-                    <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>
-                </form>
+                </div>
             </div>
-        </section>
-        <section class="section_form_user">
-            <div class="section_form_user_bloc">
-                <div class="section_form_user_bloc_title">
-                    <h1 class="size-35">Suivi du stockage</h1>
+            <div class="section_form_item" id="formMaintenance">
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Backup</h1>
+                        </div>
+                        <form action="src/createBackup.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="username" class="size-18 font-medium">Nom de l'utilisateur</label>
+                                    <input type="text" name="username" id="domain_backup" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Faire un backup</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="consommation_stockage">
-                    <p class="size-18 font-medium">Utilisateur</p>
-                    <p class="size-18 font-medium">Consomation </p>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Télécharger un backup</h1>
+                        </div>
+                        <form action="src/dlBackup.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="username" class="size-18 font-medium">Nom de l'utilisateur</label>
+                                    <input type="text" name="username" id="domain_backup" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Télécharger un backup</button>
+                        </form>
+                    </div>
                 </div>
-                <?php include_once 'src/usersStorage.php' ?>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Modifier le mot de passe</h1>
+                        </div>
+                        <form action="src/newPassword.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                            <div class="group_form">
+                                <div class="group_input">
+                                    <label for="database" class="size-18 font-medium">Nom utilisateur</label>
+                                    <input type="text" name="database" id="db_database" required>
+                                </div>
+                                <div class="group_input">
+                                    <label for="password" class="size-18 font-medium">Nouveau mot de passe</label>
+                                    <input type="text" name="password" id="password_database" required>
+                                </div>
+                            </div>
+                            <button class="button-global button-primary" id="submitAddDb" type="submit" name="submitAddDb">Créer la bdd</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="section_form_item" id="formStat">
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Suivi du stockage</h1>
+                        </div>
+                        <div class="consommation_stockage">
+                            <p class="size-18 font-medium">Utilisateur</p>
+                            <p class="size-18 font-medium">Consomation </p>
+                        </div>
+                        <?php include_once 'src/usersStorage.php' ?>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

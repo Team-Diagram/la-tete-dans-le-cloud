@@ -1,0 +1,78 @@
+.page_index{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.section_filters{
+  &_bloc{
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+    background: white;
+    border-radius: 90px;
+    &_item{
+      padding: 7px 12px;
+      border-radius: 90px;
+      font-size: 18px;
+      background-color: $white;
+      transition: background-color 0.3s ease-in-out;
+      &.active{
+        background-color: $blue;
+        color: $white;
+      }
+      &:hover{
+        background-color: rgba(48, 50, 255, 0.2);
+      }
+    }
+  }
+}
+
+.section_form {
+  width: 80%;
+  max-width: 650px;
+  &_user {
+    &_bloc {
+      background: $white;
+      border: 0.5px solid $greyStroke;
+      box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
+      border-radius: 14px;
+      padding: 50px;
+
+      &_title {
+        margin-bottom: 30px;
+
+        h1 {
+          text-align: center;
+        }
+      }
+
+      form {
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.consommation_stockage{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.users-storage{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .user{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

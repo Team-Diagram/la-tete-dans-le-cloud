@@ -397,6 +397,14 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .group_form {
   display: flex;
   flex-direction: column;
@@ -487,7 +495,29 @@ a.button-secondary:hover, button.button-secondary:hover {
   padding: 50px 0;
 }
 
-.section_form_user {
+.section_filters_bloc {
+  display: flex;
+  gap: 8px;
+  padding: 5px;
+  background: white;
+  border-radius: 90px;
+}
+.section_filters_bloc_item {
+  padding: 7px 12px;
+  border-radius: 90px;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease-in-out;
+}
+.section_filters_bloc_item.active {
+  background-color: #3032FF;
+  color: #FFFFFF;
+}
+.section_filters_bloc_item:hover {
+  background-color: rgba(48, 50, 255, 0.2);
+}
+
+.section_form {
   width: 80%;
   max-width: 650px;
 }

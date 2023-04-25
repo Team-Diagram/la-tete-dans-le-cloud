@@ -25,6 +25,10 @@
       &.active{
         background-color: $blue;
         color: $white;
+        &:hover{
+          background-color: $blue;
+          color: $white;
+        }
       }
       &:hover{
         background-color: rgba(48, 50, 255, 0.2);
@@ -36,25 +40,36 @@
 .section_form {
   width: 80%;
   max-width: 650px;
-  &_user {
-    &_bloc {
-      background: $white;
-      border: 0.5px solid $greyStroke;
-      box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
-      border-radius: 14px;
-      padding: 50px;
+  &_item {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    &.active{
+      display: flex;
+    }
+    &_user {
+      width: 100%;
+      &_bloc {
+        background: $white;
+        border: 0.5px solid $greyStroke;
+        box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
+        border-radius: 14px;
+        padding: 50px;
 
-      &_title {
-        margin-bottom: 30px;
+        &_title {
+          margin-bottom: 30px;
 
-        h1 {
-          text-align: center;
+          h1 {
+            text-align: center;
+          }
         }
-      }
 
-      form {
-        button {
-          margin-top: 20px;
+        form {
+          button {
+            margin-top: 20px;
+          }
         }
       }
     }

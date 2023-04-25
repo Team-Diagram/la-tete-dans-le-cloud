@@ -513,6 +513,10 @@ a.button-secondary:hover, button.button-secondary:hover {
   background-color: #3032FF;
   color: #FFFFFF;
 }
+.section_filters_bloc_item.active:hover {
+  background-color: #3032FF;
+  color: #FFFFFF;
+}
 .section_filters_bloc_item:hover {
   background-color: rgba(48, 50, 255, 0.2);
 }
@@ -521,20 +525,33 @@ a.button-secondary:hover, button.button-secondary:hover {
   width: 80%;
   max-width: 650px;
 }
-.section_form_user_bloc {
+.section_form_item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.section_form_item.active {
+  display: flex;
+}
+.section_form_item_user {
+  width: 100%;
+}
+.section_form_item_user_bloc {
   background: #FFFFFF;
   border: 0.5px solid #EAEAEA;
   box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
   border-radius: 14px;
   padding: 50px;
 }
-.section_form_user_bloc_title {
+.section_form_item_user_bloc_title {
   margin-bottom: 30px;
 }
-.section_form_user_bloc_title h1 {
+.section_form_item_user_bloc_title h1 {
   text-align: center;
 }
-.section_form_user_bloc form button {
+.section_form_item_user_bloc form button {
   margin-top: 20px;
 }
 

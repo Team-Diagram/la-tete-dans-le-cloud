@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/style/main.css">
-    <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
     <title></title>
 </head>
 <body>
     <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
-                <button class="section_filters_bloc_item active" id="btnCreate">Créer</button>
-                <button class="section_filters_bloc_item" id="btnMaintenance">Maintenir</button>
-                <button class="section_filters_bloc_item" id="btnStat">Visionner à travers les époques</button>
+                <button class="section_filters_bloc_item active" id="btnCreate" onclick="filterButton()">Créer</button>
+                <button class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenir</button>
+                <button class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Visionner à travers les époques</button>
             </div>
         </section>
-        <section class="section_form active">
-            <div class="section_form_item" id="formCreate">
+        <section class="section_form">
+            <div class="section_form_item active btnCreate" id="formCreate">
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
@@ -88,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section_form_item" id="formMaintenance">
+            <div class="section_form_item btnMaintenance" id="formMaintenance">
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
@@ -142,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section_form_item" id="formStat">
+            <div class="section_form_item btnStat" id="formStat">
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
@@ -158,5 +157,6 @@
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
 </body>
 </html>

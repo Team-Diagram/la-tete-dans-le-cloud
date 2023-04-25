@@ -1,20 +1,14 @@
-const btnItem = document.querySelectorAll(".section_filters_bloc_item");
-//const sectionItem = document.querySelectorAll(".section_form_item");
+const createElements = document.getElementById("formCreate");
+const maintenanceElements = document.getElementById("formMaintenance");
+const statElements = document.getElementById("formStat");
 
-console.log(btnItem);
 
+function filterButton() {
+    const targetId = event.target.id;
+    document.querySelector(".section_filters_bloc_item.active").classList.remove("active");
+    document.getElementById(targetId).classList.add("active");
 
-for (i = 0; i < btnItem.length; ++i) {
-    console.log(btnItem);
-    btnItem[i].addEventListener("click", () => {
-        console.log(btnItem[i]);
-        //remove
-        btnItem.forEach(element => {
-            if (listItems.classList.contains("active")){
-                element.classList.remove("active")
-            }
-        })
-        //add
-        btnItem[i].classList.add("active");
-    });
-};
+    document.querySelector(".section_form_item.active").classList.remove("active");
+    document.querySelector(`.${targetId}`).classList.add("active");
+}
+

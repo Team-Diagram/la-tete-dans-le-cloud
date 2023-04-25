@@ -40,6 +40,6 @@ sudo touch /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 757 /etc/nginx/sites-enabled/$CONF
 
-sudo cat template_conf | sed -e "s/DOMAINE/$DOMAINE/g" -e "s/CONF/$CONF/g" -e "s/USER/$USER/g" > /etc/nginx/sites-enabled/$CONF
+sudo cat /etc/nginx/sites-enabled/template_conf | sed -e "s/DOMAINE/$DOMAINE/g" -e "s/CONF/$CONF/g" -e "s/USER/$USER/g" > /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 754 /etc/nginx/sites-enabled/$CONF

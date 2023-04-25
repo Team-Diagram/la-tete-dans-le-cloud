@@ -40,26 +40,6 @@ sudo touch /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 757 /etc/nginx/sites-enabled/$CONF
 
-printf '%s\n' \
-  "server { " \
-  "	listen 80; " \
-  "	listen [::]:80; " \
-  "	server_name $DOMAINE; " \
-  "	root /home/$USER/$CONF; " \
-  "	index index.html index.htm index.nginx-debian.html; " \
-  " " \
-  "	server_name _; " \
-  " " \
-  "	location / { " \
-  "		try_files \$uri \$uri/ =404; " \
-  "	} " \
-  "	location ~* ^.+\.(xml|ogg|ogv|svg|svgz|eot|otf|woff|)$ " \
-  "	{ " \
-  "		access_log off; " \
-  "		log_not_found off; " \
-  "		expires max; " \
-  "	} " \
-  "} " \
-  > /etc/nginx/sites-enabled/$CONF
+cat template_conf | sed -e "s/DOMAINE/$DOMAINE/g" -e "s/CONF/$CONF/g" -e "s/USER/$USER/g" > /etc/nginx/sites-enabled/$CONF
 
 sudo chmod 754 /etc/nginx/sites-enabled/$CONF

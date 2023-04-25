@@ -7,7 +7,7 @@ CHECK=`sudo cat /etc/passwd | grep $USER | cut -d ':' -f 1`
 if [ $USER != $CHECK ]
 then
   echo "user $USER doesn't exist"
-  exit 0
+  exit 1
 fi
 
 sudo chmod 755 /home/$USER
@@ -15,7 +15,7 @@ sudo chmod 755 /home/$USER
 if [ -d /home/$USER/$CONF ]
 then
   echo "repository $CONF already exist"
-  exit 0
+  exit 1
 fi
 
 sudo mkdir /home/$USER/$CONF
@@ -31,7 +31,7 @@ echo "<h1>$CONF est le site de $USER sur le domaine $DOMAINE</h1>" > /home/$USER
 if [ -d /etc/nginx/sites-enabled/$CONF ]
 then
   echo "conf $CONF already exist"
-  exit 0
+  exit 1
 fi
 
 sudo chmod 755 /etc/nginx/sites-enabled

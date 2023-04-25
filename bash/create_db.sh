@@ -7,7 +7,7 @@ CHECK=`sudo cat /etc/passwd | grep $USER | cut -d ':' -f 1`
 if [ $USER != $CHECK ]
 then
   echo "user $USER doesn't exist"
-  exit 0
+  exit 1
 fi
 
 sudo mysql -e "CREATE DATABASE $DATABASE;"

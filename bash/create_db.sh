@@ -2,9 +2,9 @@
 USER=$1
 DATABASE=$2
 PASSWORD=$3
+CHECK=`sudo cat /etc/passwd | grep $USER | cut -d ':' -f 1`
 
-
-if [ ! -d /home/$USER/ ]
+if [ $USER != $CHECK ]
 then
   echo "user $USER doesn't exist"
   exit 0

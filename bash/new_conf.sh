@@ -26,7 +26,7 @@ sudo touch /home/$USER/$CONF/index.html
 
 sudo chmod 757 /home/$USER/$CONF/index.html
 
-echo "<h1>le site de $USER</h1>" > /home/$USER/$CONF/index.html
+echo "<h1>$CONF est le site de $USER sur le domaine $DOMAINE</h1>" > /home/$USER/$CONF/index.html
 
 if [ -d /etc/nginx/sites-enabled/$CONF ]
 then

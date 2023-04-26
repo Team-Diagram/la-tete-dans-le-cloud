@@ -10,7 +10,7 @@ if(!empty($_POST)){
         $createDb = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/create_db.sh $username $database $password");
         echo "<pre>$createDb</pre>";
 
-        if (str_contains($scriptNewPassword,'error')) {
+        if (strpos($createDb, 'error') === 0) { 
             $_SESSION['error_message'] = "La base de donnée n'a pas été crée $createDb";
         }
     }

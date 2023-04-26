@@ -9,7 +9,7 @@ if(!empty($_POST)){
         $scriptUser = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/create_user.sh $nameUser '$keyUser'");
         echo "<pre>$scriptUser</pre>";        
         
-        if (str_contains($scriptNewPassword,'error')) {
+        if (strpos($scriptUser,'error') === 0) {
             $_SESSION['error_message'] = "Le user n'a pas été crée $scriptUser";
         }
     }

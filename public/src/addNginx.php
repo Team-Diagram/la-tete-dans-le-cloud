@@ -10,7 +10,7 @@ if(!empty($_POST)){
         $scriptNginx = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/new_conf.sh $nameUser $siteNginx $domainNginx");
         echo "<pre>$scriptNginx</pre>";
 
-        if (str_contains($scriptNewPassword,'error')) {
+        if (strpos($scriptNginx, 'error') === 0) {
             $_SESSION['error_message'] = "Le serveur Nginx n'a pas été crée $scriptNginx";
         }
     }

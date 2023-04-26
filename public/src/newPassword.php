@@ -8,7 +8,7 @@
             $scriptNewPassword = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/new_password.sh $username $password");
             echo "<pre>$scriptNewPassword</pre>";
     
-            if (strpos($scriptNewPassword,'error' === 0)) { 
+            if (strpos($scriptNewPassword, 'error') === 0) { 
                 $_SESSION['error_message'] = "Le password n'a pas été modifié $scriptNewPassword";
             }
         }

@@ -7,12 +7,11 @@
             $password = htmlspecialchars(strip_tags($_POST['password']));
             $scriptNewPassword = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/new_password.sh $username $password");
             echo "<pre>$scriptNewPassword</pre>";
-
-            var_dump(strpos($scriptNewPassword,'error'));
-            if (strpos($scriptNewPassword,'error')) { 
+    
+            if (strpos($scriptNewPassword,'error' === 0)) { 
                 $_SESSION['error_message'] = "Le password n'a pas été modifié $scriptNewPassword";
             }
         }
     }
-    // header("Location: /index.php");
+    header("Location: /index.php");
 ?>

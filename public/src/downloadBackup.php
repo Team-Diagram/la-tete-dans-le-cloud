@@ -4,8 +4,8 @@ if(!empty($_POST)){
   if(isset($_POST['username']) && !empty($_POST['username'])) {
     $username = htmlspecialchars(strip_tags($_POST['username']));
     $data = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/get_backup.sh '$username' ");
-    if (strpos('error', $data)) {
-      $_SESSION['error_message'] = "Le téléchargement n'a pas fait $data";
+    if (str_contains($scriptNewPassword,'error')) {
+      $_SESSION['error_message'] = "Le téléchargement n'a été pas fait $data";
   }
     $backup_files = explode(' ', $data);   
     $links_to_backup_files = array_map('create_links_to_backup', $backup_files);

@@ -12,7 +12,7 @@
     <?php
         session_start();       
         if (isset($_SESSION['error_message'])) {
-            echo '<div class="error-message message">' . $_SESSION['error_message'] . '</div>';
+            echo '<div class="message">' . $_SESSION['error_message'] . '</div>';
             unset($_SESSION['error_message']);
         }
     ?>

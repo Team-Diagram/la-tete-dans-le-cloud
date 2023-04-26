@@ -6,7 +6,7 @@ CHECK=`sudo cat /etc/passwd | grep $USER | cut -d ':' -f 1`
 
 if [ $USER != $CHECK ]
 then
-  echo "user $USER doesn't exist"
+  echo " error : user $USER doesn't exist"
   exit 1
 fi
 

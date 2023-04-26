@@ -1,7 +1,6 @@
 <?php
     $string = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/users_storage.sh");
 
-
     $words = preg_split('/\s+/', $string, -1, PREG_SPLIT_NO_EMPTY);
     $words = array_values($words);
     

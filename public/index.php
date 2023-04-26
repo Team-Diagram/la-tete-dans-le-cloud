@@ -11,13 +11,15 @@
     <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
-                <button class="section_filters_bloc_item active" id="btnCreate" onclick="filterButton()">Créer</button>
-                <button class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenir</button>
-                <button class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Visionner à travers les époques</button>
+                <button class="section_filters_bloc_item active" id="btnCreate" onclick="filterButton()">Création serveur</button>
+                <button class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenance serveur</button>
+                <button class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Stockage serveurs</button>
+                <div class="hover-filter"></div>
+                <div class="background-filter"></div>
             </div>
         </section>
         <section class="section_form">
-            <div class="section_form_item active btnCreate" id="formCreate">
+            <div class="section_form_item btnCreate active" id="formCreate">
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
@@ -41,7 +43,7 @@
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">Ngnix</h1>
+                            <h1 class="size-35">Nginx</h1>
                         </div>
                         <form id="formNgnix" action="src/addNginx.php" method="POST" class="section_form_item_user_bloc_form form_global">
                             <div class="group_form">

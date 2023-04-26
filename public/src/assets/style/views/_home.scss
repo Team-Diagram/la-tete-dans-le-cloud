@@ -12,26 +12,67 @@
 .section_filters{
   &_bloc{
     display: flex;
-    gap: 8px;
     padding: 5px;
     background: white;
     border-radius: 90px;
+    position: relative;
+    .hover-filter{
+      position: absolute;
+      top: 5px;
+      height: calc(100% - 10px);
+      background-color: rgba(48, 50, 255, 0);
+      border-radius: 90px;
+      z-index: 5;
+      transition: all 0.3s ease-in-out;
+    }
+    .background-filter{
+      position: absolute;
+      top: 5px;
+      height: calc(100% - 10px);
+      background-color: $blue;
+      border-radius: 90px;
+      z-index: 7;
+      transition: all 0.3s ease-in-out;
+    }
     &_item{
-      padding: 7px 12px;
+      padding: 7px 17px;
       border-radius: 90px;
       font-size: 18px;
-      background-color: $white;
-      transition: background-color 0.3s ease-in-out;
-      &.active{
-        background-color: $blue;
-        color: $white;
-        &:hover{
-          background-color: $blue;
-          color: $white;
-        }
+      z-index: 10;
+      transition: all 0.4s ease-in-out;
+      &:nth-child(2){
+        padding: 7px 22px;
       }
-      &:hover{
-        background-color: rgba(48, 50, 255, 0.2);
+      &#btnCreate:hover ~.hover-filter{
+        width: 164px;
+        left: 5px;
+      }
+      &#btnMaintenance:hover ~.hover-filter{
+        width: 198px;
+        left: 174px;
+      }
+      &#btnStat:hover ~.hover-filter{
+        width: 177px;
+        left: 379px;
+      }
+      &:hover ~.hover-filter{
+        background-color: rgba(48, 50, 255, 0.1);
+      }
+      &.active{
+        //background-color: $blue;
+        color: $white;
+        &#btnCreate ~.background-filter{
+          width: 164px;
+          left: 5px;
+        }
+        &#btnMaintenance ~.background-filter{
+          width: 198px;
+          left: 174px;
+        }
+        &#btnStat ~.background-filter{
+          width: 177px;
+          left: 379px;
+        }
       }
     }
   }
@@ -46,8 +87,14 @@
     justify-content: center;
     gap: 40px;
     align-items: center;
+    transform: translateX(-15px);
+    opacity: 0;
+    transition: all 0.45s ease-in-out;
+
     &.active{
       display: flex;
+      transform: translateX(0);
+      opacity: 1;
     }
     &_user {
       width: 100%;
@@ -56,8 +103,7 @@
         border: 0.5px solid $greyStroke;
         box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
         border-radius: 14px;
-        padding: 50px;
-
+        padding: 40px;
         &_title {
           margin-bottom: 30px;
 

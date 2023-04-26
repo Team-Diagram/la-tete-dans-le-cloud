@@ -497,28 +497,68 @@ a.button-secondary:hover, button.button-secondary:hover {
 
 .section_filters_bloc {
   display: flex;
-  gap: 8px;
   padding: 5px;
   background: white;
   border-radius: 90px;
+  position: relative;
+}
+.section_filters_bloc .hover-filter {
+  position: absolute;
+  top: 5px;
+  height: calc(100% - 10px);
+  background-color: rgba(48, 50, 255, 0);
+  border-radius: 90px;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.section_filters_bloc .background-filter {
+  position: absolute;
+  top: 5px;
+  height: calc(100% - 10px);
+  background-color: #3032FF;
+  border-radius: 90px;
+  z-index: 7;
+  transition: all 0.3s ease-in-out;
 }
 .section_filters_bloc_item {
-  padding: 7px 12px;
+  padding: 7px 17px;
   border-radius: 90px;
   font-size: 18px;
-  background-color: #FFFFFF;
-  transition: background-color 0.3s ease-in-out;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+.section_filters_bloc_item:nth-child(2) {
+  padding: 7px 22px;
+}
+.section_filters_bloc_item#btnCreate:hover ~ .hover-filter {
+  width: 164px;
+  left: 5px;
+}
+.section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
+  width: 198px;
+  left: 174px;
+}
+.section_filters_bloc_item#btnStat:hover ~ .hover-filter {
+  width: 177px;
+  left: 379px;
+}
+.section_filters_bloc_item:hover ~ .hover-filter {
+  background-color: rgba(48, 50, 255, 0.1);
 }
 .section_filters_bloc_item.active {
-  background-color: #3032FF;
   color: #FFFFFF;
 }
-.section_filters_bloc_item.active:hover {
-  background-color: #3032FF;
-  color: #FFFFFF;
+.section_filters_bloc_item.active#btnCreate ~ .background-filter {
+  width: 164px;
+  left: 5px;
 }
-.section_filters_bloc_item:hover {
-  background-color: rgba(48, 50, 255, 0.2);
+.section_filters_bloc_item.active#btnMaintenance ~ .background-filter {
+  width: 198px;
+  left: 174px;
+}
+.section_filters_bloc_item.active#btnStat ~ .background-filter {
+  width: 177px;
+  left: 379px;
 }
 
 .section_form {
@@ -531,9 +571,14 @@ a.button-secondary:hover, button.button-secondary:hover {
   justify-content: center;
   gap: 40px;
   align-items: center;
+  transform: translateX(-15px);
+  opacity: 0;
+  transition: all 0.45s ease-in-out;
 }
 .section_form_item.active {
   display: flex;
+  transform: translateX(0);
+  opacity: 1;
 }
 .section_form_item_user {
   width: 100%;
@@ -543,7 +588,7 @@ a.button-secondary:hover, button.button-secondary:hover {
   border: 0.5px solid #EAEAEA;
   box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
   border-radius: 14px;
-  padding: 50px;
+  padding: 40px;
 }
 .section_form_item_user_bloc_title {
   margin-bottom: 30px;

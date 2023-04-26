@@ -522,7 +522,6 @@ a.button-secondary:hover, button.button-secondary:hover {
 }
 .section_filters_bloc_item {
   padding: 7px 17px;
-  border-radius: 90px;
   font-size: 18px;
   z-index: 10;
   transition: all 0.4s ease-in-out;

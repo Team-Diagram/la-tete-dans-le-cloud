@@ -1,27 +1,30 @@
-const createElements = document.getElementById("formCreate");
-const maintenanceElements = document.getElementById("formMaintenance");
-const statElements = document.getElementById("formStat");
-
-const filterActive = document.querySelector(".section_filters_bloc_item.active");
-const sectionActive = document.querySelector(".section_form_item.active");
-
 
 function filterButton() {
     const targetId = event.target.id;
-    //document.querySelector(".section_filters_bloc_item.active").classList.remove("active");
-    //document.getElementById(targetId).classList.add("active");
 
-    //document.querySelector(".section_form_item.active").classList.remove("active");
-    //document.querySelector(`.${targetId}`).classList.add("active");
+    const filterClick = document.getElementById(targetId);
+    const sectionClick = document.querySelector(`.${targetId}`);
 
-    document.querySelector(".section_filters_bloc_item.active").classList.remove("active");
-    document.getElementById(targetId).classList.add("active");
+    const filterActive = document.querySelector(".section_filters_bloc_item.active");
+    const sectionActive = document.querySelector(".section_form_item.active");
 
-    document.querySelector(".section_form_item.active").style.display = "none";
-    document.querySelector(`.${targetId}`).style.display = "flex";
+    const filterWidth = filterClick.offsetWidth;
+    const filterHover =  document.querySelector(".hover-filter");
+    const filterBackground =  document.querySelector(".background-filter");
+    console.log(filterBackground);
+    console.log(filterWidth);
+
+    filterActive.classList.remove("active");
+    filterClick.classList.add("active");
+
+    sectionActive.style.display = "none";
+    sectionClick.style.display = "flex";
     setTimeout(() => {
-        document.querySelector(".section_form_item.active").classList.remove("active");
-        document.querySelector(`.${targetId}`).classList.add("active");
+        sectionActive.classList.remove("active");
+        sectionClick.classList.add("active");
+
+        filterBackground.style.width = filterWidth + "px";
     }, 10);
 }
 
+//filterHover.style.width = filterWidth;

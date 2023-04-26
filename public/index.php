@@ -125,7 +125,7 @@
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Télécharger un backup</h1>
                         </div>
-                        <form action="src/dlBackup.php" method="POST" class="section_form_item_user_bloc_form form_global">
+                        <form method="POST" class="section_form_item_user_bloc_form form_global">
                             <div class="group_form">
                                 <div class="group_input">
                                     <label for="username" class="size-18 font-medium">Nom de l'utilisateur</label>
@@ -134,6 +134,14 @@
                             </div>
                             <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Télécharger un backup</button>
                         </form>
+                        <?php
+                            include_once 'src/downloadBackup.php';
+                            if (isset($_SESSION['backup_file'])) {
+                                echo $_SESSION['backup_file'];
+                                unset($_SESSION['backup_file']);
+                            }
+                        ?>
+
                     </div>
                 </div>
                 <div class="section_form_item_user">

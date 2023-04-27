@@ -9,15 +9,6 @@
 </head>
 <body>
 
-    <?php
-        session_start();       
-        if (isset($_SESSION['error_message'])) {
-            echo '<div class="error-message"> <p>' . $_SESSION['error_message'] . '</p></div>';
-            unset($_SESSION['error_message']);
-        }
-    ?>
-    <div class="error-message"> <p>test erreur message test erreur message test erreur</p></div>
-
     <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
@@ -188,6 +179,13 @@
                 </div>
             </div>
         </section>
+        <?php
+        session_start();
+        if (isset($_SESSION['error_message'])) {
+            echo '<div class="error-message"> <p>' . $_SESSION['error_message'] . '</p></div>';
+            unset($_SESSION['error_message']);
+        }
+        ?>
     </main>
     <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
     <script type="text/javascript" src="./src/assets/js/error-message.js"></script>

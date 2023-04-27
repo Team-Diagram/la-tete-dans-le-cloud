@@ -8,5 +8,5 @@ then
   exit 1
 fi
 
-BACKUPFILES=`ls /tmp | grep BACKUP_"$USERNAME"`
+BACKUPFILES=`ls /home/$USERNAME/tmp`
 echo $BACKUPFILES

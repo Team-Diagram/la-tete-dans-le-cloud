@@ -9,4 +9,4 @@ then
   exit 1
 fi
 
-sudo tar cvzf /home/"$USERNAME"/tmp/BACKUP_"$USERNAME"_"$DATE".tar --exclude="home/adrien/tmp" /home/"$USERNAME"
+sudo tar cvzf /home/"$USERNAME"/tmp/BACKUP_"$USERNAME"_"$DATE".tar --exclude="**/tmp" --directory=/home/ "$USERNAME"

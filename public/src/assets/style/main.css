@@ -570,7 +570,7 @@ header .logo_text:hover .cul {
   border-radius: 90px;
   overflow: hidden;
   border: 1px #1E53F8 solid;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .stockage-bar-used {
   height: 100%;
@@ -684,6 +684,10 @@ header .logo_text:hover .cul {
 .section_form_item_user_bloc_title h1 {
   text-align: center;
 }
+.section_form_item_user_bloc .ressources-ram,
+.section_form_item_user_bloc .ressources-cpu {
+  margin-bottom: 40px;
+}
 .section_form_item_user_bloc form button {
   margin-top: 20px;
 }
@@ -691,7 +695,6 @@ header .logo_text:hover .cul {
 .consommation_stockage {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 }
 .consommation_stockage_item .size-18 {
   margin-bottom: 5px;

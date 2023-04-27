@@ -1,7 +1,5 @@
 <?php
-
     $chargeCPU = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/get_charge_cpu.sh");
-
 ?>
 <div class="consommation_stockage">
     <div class="consommation_stockage_item">

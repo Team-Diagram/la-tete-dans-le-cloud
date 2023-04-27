@@ -109,6 +109,10 @@
             text-align: center;
           }
         }
+        .ressources-ram,
+        .ressources-cpu{
+          margin-bottom: 40px;
+        }
 
         form {
           button {
@@ -123,7 +127,6 @@
 .consommation_stockage{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
   &_item{
     .size-18{
       margin-bottom: 5px;

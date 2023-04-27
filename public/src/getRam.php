@@ -22,5 +22,5 @@ $percentUsedMemori = $usedMemori / $totalMemori * 100;
 </div>
 
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?= $percentUsedMemori ?>;"></div>
+    <div class='stockage-bar-used' style="width: <?= $percentUsedMemori ?>%;"></div>
 </div>

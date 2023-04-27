@@ -6,11 +6,11 @@
   max-width: 220px;
   border-radius: 4px;
   font-weight: bold;
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  top: 115px;
   z-index: 100;
   right: 15px;
-  //display: block;
+  display: none;
   animation: slideErrorIn 5.6s normal forwards ease-in-out;
   animation-iteration-count: 1;
   @keyframes slideErrorIn {

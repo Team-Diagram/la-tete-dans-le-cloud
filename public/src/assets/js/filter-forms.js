@@ -9,7 +9,7 @@
     filterBackground.style.width = filterWidth + "px";
 };*/
 
-function filterButton() {
+function filterButton(event) {
     const targetId = event.target.id;
 
     const filterClick = document.getElementById(targetId);
@@ -33,7 +33,7 @@ function filterButton() {
 
         filterBackground.style.width = filterWidth + "px";
 
-        //
+        /*//
         const allButtons = document.querySelectorAll(".section_filters_bloc_item");
         console.log(allButtons);
         const targetIndexButton = event.target.index;
@@ -48,7 +48,7 @@ function filterButton() {
             filterBackground.style.left = filterWidth0 + "px";
         } else if (targetIndexButton == 2){
             filterBackground.style.left = filterWidth1 + filterWidth2 + "px";
-        }
+        }*/
 
     }, 10);
 

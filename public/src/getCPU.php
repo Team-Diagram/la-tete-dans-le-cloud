@@ -4,7 +4,7 @@
 ?>
 <div class="consommation_stockage">
     <div class="consommation_stockage_item">
-        <p class="size-18 font-medium">Consommation</p>
+        <p class="size-18 font-medium">Charge</p>
         <p class='space-total'><?= $chargeCPU ?></p>
     </div>
 </div>

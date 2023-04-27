@@ -10,8 +10,8 @@
   top: 115px;
   z-index: 100;
   right: 0;
-  display: block;
   opacity: 0;
+  display: block;
   animation: slideErrorIn 5.6s normal forwards ease-in-out;
   animation-iteration-count: 1;
   @keyframes slideErrorIn {

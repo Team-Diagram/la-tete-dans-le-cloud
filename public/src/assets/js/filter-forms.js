@@ -21,7 +21,7 @@ function filterButton() {
         sectionClick.classList.add("active");
 
         filterBackground.style.width = filterWidth + "px";
-    }, 100);
+    }, 10);
 
 
     //local storage

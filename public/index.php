@@ -194,6 +194,18 @@
                         <?php include_once 'src/getRam.php' ?>
                     </div>
                 </div>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">CPU</h1>
+                        </div>
+                        <div class="consommation_stockage">
+                            <p class="size-18 font-medium"></p>
+                            <p class="size-18 font-medium">Consomation</p>
+                        </div>
+                        <?php include_once 'src/getCPU.php' ?>
+                    </div>
+                </div>
             </div>
         </section>
         <?php

@@ -2,6 +2,7 @@
 
 $uniqIp = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/uniqIp.sh");
 $dataLogByIp = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/dataLogByIp.sh");
+$dataLogByIp = array_values($dataLogByIp);
 
 //var_dump($uniqIp);
 var_dump($dataLogByIp);

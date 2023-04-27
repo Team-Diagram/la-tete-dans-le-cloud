@@ -3,6 +3,7 @@ header{
   .logo{
     &_text{
       font-weight: 700;
+      width: max-content;
       .cloud{
         display: inline;
       }

@@ -12,18 +12,17 @@
         <div class="logo">
             <p class="font-familjenBold size-45 color-primary logo_text">La tête dans le <span class="cloud font-familjenBold size-45 color-primary">Cloud</span><span class="cul font-familjenBold size-45 color-primary">Cul</span></p>
         </div>
-
-    </header>
-    <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
                 <p class="section_filters_bloc_item" id="btnCreate" onclick="filterButton()">Création serveur</p>
                 <p class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenance serveur</p>
-                <p class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Stockage serveurs</p>
+                <p class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Dashboard</p>
                 <div class="hover-filter"></div>
                 <div class="background-filter"></div>
             </div>
         </section>
+    </header>
+    <main class="page_index">
         <section class="section_form">
             <div class="section_form_item btnCreate" id="formCreate">
                 <div class="section_form_item_user">
@@ -162,7 +161,19 @@
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">Suivi du stockage</h1>
+                            <h1 class="size-35">Serveur</h1>
+                        </div>
+                        <div class="consommation_stockage">
+                            <p class="size-18 font-medium">Utilisateur</p>
+                            <p class="size-18 font-medium">Consomation</p>
+                        </div>
+                        <?php include_once 'src/getFreeSpace.php' ?>
+                    </div>
+                </div>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Utisateurs</h1>
                         </div>
                         <div class="consommation_stockage">
                             <p class="size-18 font-medium">Utilisateur</p>
@@ -174,9 +185,9 @@
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">Suivi de la RAM</h1>
+                            <h1 class="size-35">RAM</h1>
                         </div>
-                        <div class="consommation_ram">
+                        <div class="consommation_stockage">
                             <p class="size-18 font-medium">Utilisateur</p>
                             <p class="size-18 font-medium">Consomation</p>
                         </div>

@@ -539,6 +539,7 @@ header {
 }
 header .logo_text {
   font-weight: 700;
+  width: max-content;
 }
 header .logo_text .cloud {
   display: inline;
@@ -605,7 +606,7 @@ header .logo_text:hover .cul {
   left: 168px;
 }
 .section_filters_bloc_item#btnStat:hover ~ .hover-filter {
-  width: 177px;
+  width: 121px;
   left: 368px;
 }
 .section_filters_bloc_item:hover ~ .hover-filter {

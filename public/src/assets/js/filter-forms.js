@@ -1,3 +1,14 @@
+/*function hoverButton(){
+    const targetId = event.target.id;
+    const filterHover = document.getElementById(targetId);
+    const filterWidth = filterHover.offsetWidth;
+
+    sectionActive.classList.remove("active");
+    sectionClick.classList.add("active");
+
+    filterBackground.style.width = filterWidth + "px";
+};*/
+
 function filterButton() {
     const targetId = event.target.id;
 
@@ -21,6 +32,24 @@ function filterButton() {
         sectionClick.classList.add("active");
 
         filterBackground.style.width = filterWidth + "px";
+
+        //
+        const allButtons = document.querySelectorAll(".section_filters_bloc_item");
+        console.log(allButtons);
+        const targetIndexButton = event.target.index;
+        console.log(targetIndexButton);
+        const filterWidth0 = allButtons[0].offsetWidth;
+        const filterWidth1 = allButtons[1].offsetWidth;
+        const filterWidth2 = allButtons[2].offsetWidth;
+
+        if (targetIndexButton == 0){
+            filterBackground.style.left = 5 + "px";
+        } else if (targetIndexButton == 1){
+            filterBackground.style.left = filterWidth0 + "px";
+        } else if (targetIndexButton == 2){
+            filterBackground.style.left = filterWidth1 + filterWidth2 + "px";
+        }
+
     }, 10);
 
 

@@ -35,4 +35,70 @@ header {
       }
     }
   }
+  .section_filters{
+    &_bloc{
+      display: flex;
+      padding: 5px;
+      background: white;
+      border-radius: 90px;
+      position: relative;
+      .hover-filter{
+        position: absolute;
+        top: 5px;
+        height: calc(100% - 10px);
+        background-color: rgba(48, 50, 255, 0);
+        border-radius: 90px;
+        z-index: 5;
+        transition: all 0.3s ease-in-out;
+      }
+      .background-filter{
+        position: absolute;
+        top: 5px;
+        height: calc(100% - 10px);
+        background-color: $blue;
+        border-radius: 90px;
+        z-index: 7;
+        transition: all 0.3s ease-in-out;
+      }
+      &_item{
+        padding: 7px 17px;
+        font-size: 18px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        &:nth-child(2){
+          //padding: 7px 22px;
+        }
+        &#btnCreate:hover ~.hover-filter{
+          width: 164px;
+          left: 5px;
+        }
+        &#btnMaintenance:hover ~.hover-filter{
+          width: 198px;
+          left: 168px;
+        }
+        &#btnStat:hover ~.hover-filter{
+          width: 121px;
+          left: 368px;
+        }
+        &:hover ~.hover-filter{
+          background-color: rgba(48, 50, 255, 0.1);
+        }
+        &.active{
+          //background-color: $blue;
+          color: $white;
+          &#btnCreate ~.background-filter{
+            width: 164px;
+            left: 5px;
+          }
+          &#btnMaintenance ~.background-filter{
+            //left: 168px;
+          }
+          &#btnStat ~.background-filter{
+            //left: 368px;
+          }
+        }
+      }
+    }
+  }
 }

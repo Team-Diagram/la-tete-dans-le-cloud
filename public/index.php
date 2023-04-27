@@ -164,8 +164,9 @@
                             <h1 class="size-35">Serveur</h1>
                         </div>
                         <div class="consommation_stockage">
-                            <p class="size-18 font-medium">Utilisateur</p>
-                            <p class="size-18 font-medium">Consomation</p>
+                            <p class="size-18 font-medium">Stockage total</p>
+                            <p class="size-18 font-medium">Stockage utilisé</p>
+                            <p class="size-18 font-medium">Stockage disponible</p>
                         </div>
                         <?php include_once 'src/getFreeSpace.php' ?>
                     </div>
@@ -188,8 +189,9 @@
                             <h1 class="size-35">RAM</h1>
                         </div>
                         <div class="consommation_stockage">
-                            <p class="size-18 font-medium">Utilisateur</p>
-                            <p class="size-18 font-medium">Consomation</p>
+                            <p class="size-18 font-medium">RAM totale</p>
+                            <p class="size-18 font-medium">RAM utilisée</p>
+                            <p class="size-18 font-medium">RAM disponible</p>
                         </div>
                         <?php include_once 'src/getRam.php' ?>
                     </div>

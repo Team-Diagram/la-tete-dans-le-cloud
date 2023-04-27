@@ -10,10 +10,14 @@
   top: 115px;
   z-index: 100;
   right: 15px;
+  display: none;
   animation: slideErrorIn 5.6s normal forwards ease-in-out;
   animation-iteration-count: 1;
   @keyframes slideErrorIn {
     0% {
+      display: none;
+    }
+    1%{
       right: 0;
       opacity: 0;
       display: block;

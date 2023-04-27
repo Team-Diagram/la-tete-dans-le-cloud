@@ -10,5 +10,5 @@
 </div>
 
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?= $chargeCPUin ?>%;"></div>
+    <div class='stockage-bar-used' style="width: <?= $chargeCPU ?>;"></div>
 </div>

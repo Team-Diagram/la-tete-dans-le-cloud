@@ -30,7 +30,7 @@ function filterButton(event) {
     setTimeout(() => {
         sectionActive.classList.remove("active");
         sectionClick.classList.add("active");
-
+        console.log(targetId);
         if (targetId = "btnMaintenance"){
             filterBackground.style.width = filterWidth - 8 + "px";
         } else {

@@ -8,7 +8,8 @@ $percentUsedSpace = $usedSpace / $totalSpace * 100;
 
 echo "<div class='users-ram'>";
     echo "<p class='space-total'>" . $totalSpace . " kb</p>";
-    echo "<p class='space-disponible'>" . $availableSpace . " kb</p>";
+    echo "<p class='space-used'>" . $usedSpace . " kb</p>";
+    echo "<p class='space-available'>" . $availableSpace . " kb</p>";
 echo "</div>";
 
 ?>

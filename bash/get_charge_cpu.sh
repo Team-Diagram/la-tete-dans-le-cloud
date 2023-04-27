@@ -13,4 +13,7 @@ cpu_accurate=$(echo "scale=2; 100 * $cpu_time_all_processess / $cpu_time_last_st
 cpu_formatted=$(printf "%.2f" $cpu_accurate)
 cpu_formatted=$(printf "%0.2f" $cpu_formatted)
 
+cpu_formatted=$cpu_formatted + "%"
+
 echo $cpu_formatted
+

@@ -1,5 +1,5 @@
 <?php
-    $chargeCPU = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/get_charge_cpu.sh") + "%";
+    $chargeCPU = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/get_charge_cpu.sh");
     $chargeCPUin = str_replace(' ', '', $chargeCPU);
 ?>
 <div class="consommation_stockage">
@@ -10,5 +10,5 @@
 </div>
 
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?= $chargeCPU ?>;"></div>
+    <div class='stockage-bar-used' style="width: <?= $chargeCPUin ?>%;"></div>
 </div>

@@ -5,13 +5,22 @@ $memoriAvailable = shell_exec("bash /var/www/html/la-tete-dans-le-cloud/bash/get
 $usedMemori = $totalMemori - $memoriAvailable;
 $percentUsedMemori = $usedMemori / $totalMemori * 100;
 
-echo "<div class='users-ram'>";
-    echo "<p class='memoire-total'>" . $totalMemori . " kb</p>";
-    echo "<p class='memoire-used'>" . $usedMemori . " kb</p>";
-    echo "<p class='memoire-available'>" . $memoriAvailable . " kb</p>";
-echo "</div>";
-
 ?>
+<div class="consommation_stockage">
+    <div class="consommation_stockage_item">
+        <p class="size-18 font-medium">Stockage total</p>
+        <p class='space-total'><?= $totalMemori ?> kb</p>
+    </div>
+    <div class="consommation_stockage_item">
+        <p class="size-18 font-medium">Stockage utilisé</p>
+        <p class='space-used'><?= $usedMemori ?> kb</p>
+    </div>
+    <div class="consommation_stockage_item">
+        <p class="size-18 font-medium">Stockage disponible</p>
+        <p class='space-available'><?= $memoriAvailable ?> kb</p>
+    </div>
+</div>
+
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?= $percentUsedMemori ?>%"></div>
+    <div class='stockage-bar-used' style="width: <?= $percentUsedMemori ?>%;"></div>
 </div>

@@ -183,11 +183,6 @@
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">RAM</h1>
                         </div>
-                        <div class="consommation_stockage">
-                            <p class="size-18 font-medium">RAM totale</p>
-                            <p class="size-18 font-medium">RAM utilisée</p>
-                            <p class="size-18 font-medium">RAM disponible</p>
-                        </div>
                         <?php include_once 'src/getRam.php' ?>
                     </div>
                 </div>

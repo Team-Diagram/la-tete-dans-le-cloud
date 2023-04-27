@@ -8,18 +8,18 @@ $percentUsedSpace = $usedSpace / $totalSpace * 100;
 <div class="consommation_stockage">
     <div class="consommation_stockage_item">
         <p class="size-18 font-medium">Stockage total</p>
-        <p class='space-total'><?php $totalSpace ?> kb</p>
+        <p class='space-total'><?= $totalSpace ?> kb</p>
     </div>
     <div class="consommation_stockage_item">
         <p class="size-18 font-medium">Stockage utilisé</p>
-        <p class='space-used'><?php $usedSpace ?> kb</p>
+        <p class='space-used'><?= $usedSpace ?> kb</p>
     </div>
     <div class="consommation_stockage_item">
         <p class="size-18 font-medium">Stockage disponible</p>
-        <p class='space-available'><?php $availableSpace ?> kb</p>
+        <p class='space-available'><?= $availableSpace ?> kb</p>
     </div>
 </div>
 
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?php $percentUsedSpace ?>%"></div>
+    <div class='stockage-bar-used' style="width: <?= $percentUsedSpace ?>%;"></div>
 </div>

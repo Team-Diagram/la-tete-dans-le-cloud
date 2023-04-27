@@ -198,10 +198,6 @@
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">IP</h1>
                         </div>
-                        <div class="consommation_stockage">
-                            <p class="size-18 font-medium">IP</p>
-                            <p class="size-18 font-medium">Nombre</p>
-                        </div>
                         <?php include_once 'src/getAccessLog.php' ?>
                     </div>
                 </div>

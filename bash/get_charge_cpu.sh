@@ -8,8 +8,6 @@ cpu_time_all_processess=$((user + nice + system + irq + softirq + steal + guest 
 
 cpu_time_last_statement=$((user + nice + system + idle + iowait + irq + softirq + steal + guest + guest_nice))
 
-cpu_accurate=$(echo "scale=2; 100 * $cpu_time_all_processess / $cpu_time_last_statement" | bc)
+cpu_accurate=$(bc <<< "scale=2; 100 * $cpu_time / $total_time")
 
-cpu_accurate=$(echo "$cpu_accurate" | sed 's/[^0-9\.]*//g')
-
-printf -v cpu_formatted "%.2f" "$cpu_accurate"
+echo "$cpu_accurate";

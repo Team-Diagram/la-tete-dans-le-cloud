@@ -9,12 +9,12 @@ $dataLogByIp = array_values($dataLogByIp);
 ?>
 
 <div class="consommation_stockage">
-    <div class="consommation_stockage_item">
+    <div class="consommation_stockage_item nombre-ip">
         <p class="size-18 font-medium">Nombre total d'IP</p>
         <p class='space-total'><?= $uniqIp ?></p>
     </div>
 </div>
-<div class="consommation_stockage">
+<div class="consommation_stockage title">
     <p class="size-18 font-medium">IP</p>
     <p class="size-18 font-medium">Pays</p>
 </div>
@@ -25,4 +25,3 @@ echo "<div class='users-storage'>";
     }
 echo "</div>";
 ?>
-

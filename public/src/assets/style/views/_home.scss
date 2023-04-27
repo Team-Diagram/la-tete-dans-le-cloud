@@ -127,10 +127,16 @@
 .consommation_stockage{
   display: flex;
   justify-content: space-between;
+  &.title{
+    margin-bottom: 10px;
+  }
   &_item{
     .size-18{
       margin-bottom: 5px;
     }
+  }
+  .nombre-ip{
+    margin-bottom: 30px;
   }
 }
 .users-storage{

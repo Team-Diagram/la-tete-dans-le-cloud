@@ -169,18 +169,6 @@
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">Utisateurs</h1>
-                        </div>
-                        <div class="consommation_stockage">
-                            <p class="size-18 font-medium">Utilisateur</p>
-                            <p class="size-18 font-medium">Consomation </p>
-                        </div>
-                        <?php include_once 'src/usersStorage.php' ?>
-                    </div>
-                </div>
-                <div class="section_form_item_user">
-                    <div class="section_form_item_user_bloc">
-                        <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Ressources</h1>
                         </div>
                         <div class="ressources-bloc ressources-ram">
@@ -191,6 +179,18 @@
                             <h2 class="size-25">CPU</h2>
                             <?php include_once 'src/getCPU.php' ?>
                         </div>
+                    </div>
+                </div>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Utisateurs</h1>
+                        </div>
+                        <div class="consommation_stockage title">
+                            <p class="size-18 font-medium">Utilisateur</p>
+                            <p class="size-18 font-medium">Consomation </p>
+                        </div>
+                        <?php include_once 'src/usersStorage.php' ?>
                     </div>
                 </div>
                 <div class="section_form_item_user">

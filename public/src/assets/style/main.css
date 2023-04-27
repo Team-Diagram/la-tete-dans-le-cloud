@@ -696,8 +696,14 @@ header .logo_text:hover .cul {
   display: flex;
   justify-content: space-between;
 }
+.consommation_stockage.title {
+  margin-bottom: 10px;
+}
 .consommation_stockage_item .size-18 {
   margin-bottom: 5px;
+}
+.consommation_stockage .nombre-ip {
+  margin-bottom: 30px;
 }
 
 .users-storage {

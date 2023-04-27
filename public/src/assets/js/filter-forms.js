@@ -31,7 +31,7 @@ function filterButton() {
         sectionActive.classList.remove("active");
         sectionClick.classList.add("active");
         console.log(targetId);
-        if (targetId = "btnMaintenance"){
+        if (targetId == "btnMaintenance"){
             filterBackground.style.width = filterWidth - 8 + "px";
         } else {
             filterBackground.style.width = filterWidth + "px";

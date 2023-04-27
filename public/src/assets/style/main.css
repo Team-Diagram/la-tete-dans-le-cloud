@@ -111,6 +111,10 @@ p, li, a, button, span, input, label, select, textarea {
   font-family: "Satoshi-Regular", sans-serif;
 }
 
+a {
+  color: #1E53F8;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
 }
@@ -430,8 +434,8 @@ input:hover {
   border: 1px solid #120037;
 }
 input:focus-visible {
-  border: 1px solid #3032FF;
-  box-shadow: 0 0 0 0.5px #3032FF;
+  border: 1px solid #1E53F8;
+  box-shadow: 0 0 0 0.5px #1E53F8;
   outline: none;
 }
 
@@ -450,13 +454,12 @@ input:focus-visible {
 
 a.button-global, button.button-global {
   cursor: pointer;
-  width: -moz-max-content;
   width: max-content;
   padding: 10px 25px;
   font-family: "Satoshi-Medium", sans-serif !important;
   font-size: 16px;
   line-height: 1em;
-  border-radius: 8px;
+  border-radius: 90px;
   transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
@@ -466,23 +469,61 @@ a.button-global, button.button-global {
 }
 
 a.button-primary, button.button-primary {
-  background: #3032FF;
-  border: 2px solid #3032FF;
+  background: #1E53F8;
+  border: 2px solid #1E53F8;
   color: #FFFFFF;
 }
 a.button-primary:hover, button.button-primary:hover {
   background: #FFFFFF;
-  color: #3032FF;
+  color: #1E53F8;
 }
 
 a.button-secondary, button.button-secondary {
-  border: 2px solid #3032FF;
+  border: 2px solid #1E53F8;
   background: #FFFFFF;
-  color: #3032FF;
+  color: #1E53F8;
 }
 a.button-secondary:hover, button.button-secondary:hover {
-  background: #3032FF;
+  background: #1E53F8;
   color: #FFFFFF;
+}
+
+.error-message {
+  background: #ffcaca;
+  color: #ba0000;
+  padding: 12px 16px;
+  width: 90%;
+  max-width: 220px;
+  border-radius: 4px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  z-index: 100;
+  right: 15px;
+  animation: slideErrorIn 5.6s normal forwards ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes slideErrorIn {
+  0% {
+    right: 0;
+    opacity: 0;
+    display: block;
+  }
+  7% {
+    right: 15px;
+    opacity: 1;
+  }
+  92% {
+    right: 15px;
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    display: none;
+  }
 }
 
 .page_index {
@@ -516,7 +557,7 @@ a.button-secondary:hover, button.button-secondary:hover {
   position: absolute;
   top: 5px;
   height: calc(100% - 10px);
-  background-color: #3032FF;
+  background-color: #1E53F8;
   border-radius: 90px;
   z-index: 7;
   transition: all 0.3s ease-in-out;
@@ -525,6 +566,7 @@ a.button-secondary:hover, button.button-secondary:hover {
   padding: 7px 17px;
   font-size: 18px;
   z-index: 10;
+  cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 .section_filters_bloc_item#btnCreate:hover ~ .hover-filter {
@@ -580,7 +622,7 @@ a.button-secondary:hover, button.button-secondary:hover {
 }
 .section_form_item_user_bloc {
   background: #FFFFFF;
-  border: 0.5px solid #EAEAEA;
+  border: 0.5px solid #f1f1f1;
   box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.02);
   border-radius: 14px;
   padding: 40px;
@@ -612,16 +654,10 @@ a.button-secondary:hover, button.button-secondary:hover {
   gap: 10px;
 }
 
-.message {
-  background: rgba(194, 33, 1, 0.568627451);
-  color: #401000;
-  padding: 12px 16px;
-  width: -moz-max-content;
-  width: max-content;
-  border-radius: 4px;
-  font-weight: bold;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font-family: "Satoshi-Regular", sans-serif;
-}/*# sourceMappingURL=main.css.map */
+.link-dl-backup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

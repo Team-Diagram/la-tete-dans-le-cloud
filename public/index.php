@@ -12,23 +12,24 @@
     <?php
         session_start();       
         if (isset($_SESSION['error_message'])) {
-            echo '<div class="message">' . $_SESSION['error_message'] . '</div>';
+            echo '<div class="error-message"> <p>' . $_SESSION['error_message'] . '</p></div>';
             unset($_SESSION['error_message']);
         }
     ?>
+    <div class="error-message"> <p>test erreur message test erreur message test erreur</p></div>
 
     <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
-                <button class="section_filters_bloc_item active" id="btnCreate" onclick="filterButton()">Création serveur</button>
-                <button class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenance serveur</button>
-                <button class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Stockage serveurs</button>
+                <p class="section_filters_bloc_item" id="btnCreate" onclick="filterButton()">Création serveur</p>
+                <p class="section_filters_bloc_item" id="btnMaintenance" onclick="filterButton()">Maintenance serveur</p>
+                <p class="section_filters_bloc_item" id="btnStat" onclick="filterButton()">Stockage serveurs</p>
                 <div class="hover-filter"></div>
                 <div class="background-filter"></div>
             </div>
         </section>
         <section class="section_form">
-            <div class="section_form_item btnCreate active" id="formCreate">
+            <div class="section_form_item btnCreate" id="formCreate">
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
@@ -115,7 +116,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="section_form_item_user">
+                <div class="section_form_item_user" id="dl-backup">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Télécharger un backup</h1>
@@ -127,19 +128,20 @@
                                     <input type="text" name="username" id="domain_backup" required>
                                 </div>
                             </div>
-                            <button class="button-global button-primary" id="submitAddBackup" type="submit" name="submitAddBackup">Télécharger un backup</button>
+                            <button onclick="scrollDlBackup()" class="button-global button-primary" id="submitDlBackup" type="submit" name="submitAddBackup">Télécharger un backup</button>
                         </form>
-                        <?php
-                            include_once 'src/downloadBackup.php';
-                            if (isset($_SESSION['backup_file'])) {
-                                echo $_SESSION['backup_file'];
-                                unset($_SESSION['backup_file']);
-                            }
-                        ?>
-
+                        <div class="link-dl-backup">
+                            <?php
+                                include_once 'src/downloadBackup.php';
+                                if (isset($_SESSION['backup_file'])) {
+                                    echo $_SESSION['backup_file'];
+                                    unset($_SESSION['backup_file']);
+                                }
+                            ?>
+                        </div>
                     </div>
                 </div>
-                <div class="section_form_item_user">
+                <div class="section_form_item_user" id="mdp-modify">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Modifier le mot de passe</h1>
@@ -173,9 +175,21 @@
                         <?php include_once 'src/usersStorage.php' ?>
                     </div>
                 </div>
+                <div class="section_form_item_user">
+                    <div class="section_form_item_user_bloc">
+                        <div class="section_form_item_user_bloc_title">
+                            <h1 class="size-35">Suivi de la RAM</h1>
+                        </div>
+                        <div class="consommation_stockage">
+                            <p class="size-18 font-medium">Utilisateur</p>
+                            <p class="size-18 font-medium">Consomation </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
+    <script type="text/javascript" src="./src/assets/js/error-message.js"></script>
 </body>
 </html>

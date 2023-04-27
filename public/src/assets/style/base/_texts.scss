@@ -5,6 +5,10 @@ p, li, a, button, span, input, label, select, textarea{
   font-family: 'Satoshi-Regular', sans-serif;
 }
 
+a{
+  color: $blue;
+}
+
 h1, h2, h3, h4, h5, h6{
   line-height: 1.2em;
 }

@@ -618,6 +618,13 @@ header .section_filters_bloc_item.active#btnCreate ~ .background-filter {
   width: 164px;
   left: 5px;
 }
+header .section_filters_bloc_item.active#btnMaintenance ~ .background-filter {
+  left: 168px;
+}
+header .section_filters_bloc_item.active#btnStat ~ .background-filter {
+  left: 368px;
+}
+
 .stockage-bar {
   width: 100%;
   height: 20px;

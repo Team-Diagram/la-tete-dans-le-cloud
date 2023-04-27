@@ -13,5 +13,5 @@ echo "</div>";
 
 ?>
 <div class='stockage-bar'>
-    <div class='stockage-bar-used' style="width: <?php $percentUsedMemori ?>%"></div>
+    <div class='stockage-bar-used' style="width: <?= $percentUsedMemori ?>%"></div>
 </div>

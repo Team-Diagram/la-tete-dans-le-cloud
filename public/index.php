@@ -23,6 +23,13 @@
         </section>
     </header>
     <main class="page_index">
+        <?php
+        session_start();
+        if (isset($_SESSION['error_message'])) {
+            echo '<div class="error-message"> <p>' . $_SESSION['error_message'] . '</p></div>';
+            unset($_SESSION['error_message']);
+        }
+        ?>
         <section class="section_form">
             <div class="section_form_item btnCreate" id="formCreate">
                 <div class="section_form_item_user">
@@ -203,13 +210,6 @@
                 </div>
             </div>
         </section>
-        <?php
-        session_start();
-        if (isset($_SESSION['error_message'])) {
-            echo '<div class="error-message"> <p>' . $_SESSION['error_message'] . '</p></div>';
-            unset($_SESSION['error_message']);
-        }
-        ?>
     </main>
     <script type="text/javascript" src="./src/assets/js/filter-forms.js"></script>
     <script type="text/javascript" src="./src/assets/js/error-message.js"></script>

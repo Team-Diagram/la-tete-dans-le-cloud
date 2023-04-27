@@ -124,6 +124,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  &_item{
+    .size-18{
+      margin-bottom: 5px;
+    }
+  }
 }
 .users-storage{
   display: flex;

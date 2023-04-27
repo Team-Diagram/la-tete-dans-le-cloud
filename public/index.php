@@ -181,21 +181,20 @@
                 <div class="section_form_item_user">
                     <div class="section_form_item_user_bloc">
                         <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">RAM</h1>
+                            <h1 class="size-35">Ressources</h1>
                         </div>
-                        <?php include_once 'src/getRam.php' ?>
-                    </div>
-                </div>
-                <div class="section_form_item_user">
-                    <div class="section_form_item_user_bloc">
-                        <div class="section_form_item_user_bloc_title">
-                            <h1 class="size-35">CPU</h1>
+                        <div class="ressources-ram">
+                            <h2 class="size-25">RAM</h2>
+                            <?php include_once 'src/getRam.php' ?>
                         </div>
-                        <div class="consommation_stockage">
-                            <p class="size-18 font-medium"></p>
-                            <p class="size-18 font-medium">Consomation</p>
+                        <div class="ressources-cpu">
+                            <h2 class="size-25">CPU</h2>
+                            <?php include_once 'src/getCPU.php' ?>
                         </div>
-                        <?php include_once 'src/getCPU.php' ?>
+                        <div class="ressources-gpu">
+                            <h2 class="size-25">GPU</h2>
+                            <?php include_once 'src/getCPU.php' ?>
+                        </div>
                     </div>
                 </div>
             </div>

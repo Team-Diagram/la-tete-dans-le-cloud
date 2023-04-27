@@ -570,6 +570,7 @@ header .logo_text:hover .cul {
   border-radius: 90px;
   overflow: hidden;
   border: 1px #1E53F8 solid;
+  margin-top: 30px;
 }
 .stockage-bar-used {
   height: 100%;
@@ -691,6 +692,9 @@ header .logo_text:hover .cul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+.consommation_stockage_item .size-18 {
+  margin-bottom: 5px;
 }
 
 .users-storage {

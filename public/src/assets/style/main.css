@@ -609,7 +609,7 @@ header .section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
 }
 header .section_filters_bloc_item#btnStat:hover ~ .hover-filter {
   width: 121px;
-  left: 368px;
+  left: 376px;
 }
 header .section_filters_bloc_item:hover ~ .hover-filter {
   background-color: rgba(48, 50, 255, 0.1);
@@ -622,7 +622,7 @@ header .section_filters_bloc_item.active#btnCreate ~ .background-filter {
   left: 5px;
 }
 header .section_filters_bloc_item.active#btnMaintenance ~ .background-filter {
-  left: 176px;
+  left: 172px;
 }
 header .section_filters_bloc_item.active#btnStat ~ .background-filter {
   left: 376px;

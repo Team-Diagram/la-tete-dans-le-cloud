@@ -3,6 +3,8 @@
 
     $words = preg_split('/\s+/', $string, -1, PREG_SPLIT_NO_EMPTY);
     $words = array_values($words);
+
+    var_dump($words);
     
     echo "<div class='users-storage'>";
     for ($i = 0; $i < count($words); $i += 2) {

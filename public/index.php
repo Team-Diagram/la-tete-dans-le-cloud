@@ -191,6 +191,10 @@
                             <h2 class="size-25">CPU</h2>
                             <?php include_once 'src/getCPU.php' ?>
                         </div>
+                        <div class="ressources-bloc ressources-cpu">
+                            <h2 class="size-25">CPU</h2>
+                            <?php include_once 'src/getCpuAwk.php' ?>
+                        </div>
                     </div>
                 </div>
                 <div class="section_form_item_user">

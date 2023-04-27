@@ -163,7 +163,7 @@
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Serveur</h1>
                         </div>
-                        <?php include_once 'src/getFreeSpace.php' ?>
+                        <?php include_once 'src/GetFreeSpace.php' ?>
                     </div>
                 </div>
                 <div class="section_form_item_user">

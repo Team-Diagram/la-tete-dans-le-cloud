@@ -1,0 +1,22 @@
+header{
+  padding: 20px 4%;
+  .logo{
+    &_text{
+      font-weight: 700;
+      .cloud{
+        display: inline;
+      }
+      .cul{
+        display: none;
+      }
+      &:hover{
+        .cloud{
+          display: none;
+        }
+        .cul{
+          display: inline;
+        }
+      }
+    }
+  }
+}

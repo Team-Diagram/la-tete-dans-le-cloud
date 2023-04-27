@@ -16,7 +16,7 @@ p, input, select, label, a, li{
   line-height: 1.3em;
 }
 
-$colors: ("primary" : $primary, "white" : $white, "black" : $black);
+$colors: ("primary" : $primary, "white" : $white, "black" : $black, "blue" : $blue);
 
 @each $name, $color in $colors {
   h1, h2, h3, h4, h5, h6, p, span, input, select, label, a, li {
@@ -56,7 +56,15 @@ $fontSizes: ("45" : 45, "40" : 40, "35" : 35, "25" : 25, "22" : 22, "20" : 20, "
 }
 
 
-$fontFamilies: ("light" : "Satoshi-Light", "regular" : "Satoshi-Regular", "medium" : "Satoshi-Medium", "bold" : "Satoshi-Bold", "black" : "Satoshi-Black", "italic" : "Satoshi-Italic");
+$fontFamilies: (
+        "light" : "Satoshi-Light",
+        "regular" : "Satoshi-Regular",
+        "medium" : "Satoshi-Medium",
+        "bold" : "Satoshi-Bold",
+        "black" : "Satoshi-Black",
+        "italic" : "Satoshi-Italic",
+        "familjenBold" : "FamiljenGrotesk-Bold"
+);
 
 @each $name, $fontFamily in $fontFamilies {
   h1, h2, h3, h4, h5, h6, p, span, input, select, label, a, li {

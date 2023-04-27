@@ -8,7 +8,12 @@
     <title></title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <p class="font-familjenBold size-45 color-primary logo_text">La tête dans le <span class="cloud font-familjenBold size-45 color-primary">Cloud</span><span class="cul font-familjenBold size-45 color-primary">Cul</span></p>
+        </div>
 
+    </header>
     <main class="page_index">
         <section class="section_filters">
             <div class="section_filters_bloc">
@@ -171,10 +176,11 @@
                         <div class="section_form_item_user_bloc_title">
                             <h1 class="size-35">Suivi de la RAM</h1>
                         </div>
-                        <div class="consommation_stockage">
+                        <div class="consommation_ram">
                             <p class="size-18 font-medium">Utilisateur</p>
-                            <p class="size-18 font-medium">Consomation </p>
+                            <p class="size-18 font-medium">Consomation</p>
                         </div>
+                        <?php include_once 'src/getRam.php' ?>
                     </div>
                 </div>
             </div>

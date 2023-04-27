@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cat /var/log/nginx/access.log | cut -d ' ' -f 1 | sort -u | wc -l > /var/log/nginx/tmpFile
+sudo cat /var/log/nginx/access.log | cut -d ' ' -f 1 | sort -u > /var/log/nginx/tmpFile
 while read p
 do
 WC=`cat /var/log/nginx/access.log | grep $p | wc -l`

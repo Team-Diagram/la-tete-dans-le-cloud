@@ -1,5 +1,7 @@
 <?php
 
+$username;
+
 if(!empty($_POST)){
   if(isset($_POST['username']) && !empty($_POST['username'])) {
     $username = htmlspecialchars(strip_tags($_POST['username']));
@@ -14,5 +16,6 @@ if(!empty($_POST)){
 }
 
 function create_links_to_backup($file) {
-  return "<a href=../../../../../tmp/".$file." download>".$file."</a>";
+  $user = $_POST['username'];
+  return "<a href=/home/".$user."/tmp/".$file." download>".$file."</a>";
 }

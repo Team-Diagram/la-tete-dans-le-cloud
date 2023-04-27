@@ -9,7 +9,7 @@
     filterBackground.style.width = filterWidth + "px";
 };*/
 
-function filterButton(event) {
+function filterButton() {
     const targetId = event.target.id;
 
     const filterClick = document.getElementById(targetId);

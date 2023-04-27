@@ -31,7 +31,11 @@ function filterButton(event) {
         sectionActive.classList.remove("active");
         sectionClick.classList.add("active");
 
-        filterBackground.style.width = filterWidth + "px";
+        if (targetId = "btnMaintenance"){
+            filterBackground.style.width = filterWidth - 8 + "px";
+        } else {
+            filterBackground.style.width = filterWidth + "px";
+        }
 
         /*//
         const allButtons = document.querySelectorAll(".section_filters_bloc_item");

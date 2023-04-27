@@ -73,9 +73,12 @@ header {
           width: 164px;
           left: 5px;
         }
-        &#btnMaintenance:hover ~.hover-filter{
-          width: 198px;
-          left: 168px;
+        &#btnMaintenance {
+          padding: 7px 25px;
+          &:hover ~ .hover-filter {
+            width: 199px;
+            left: 176px;
+          }
         }
         &#btnStat:hover ~.hover-filter{
           width: 121px;
@@ -92,7 +95,7 @@ header {
             left: 5px;
           }
           &#btnMaintenance ~.background-filter{
-            left: 168px;
+            left: 176px;
           }
           &#btnStat ~.background-filter{
             left: 368px;

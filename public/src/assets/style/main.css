@@ -600,9 +600,12 @@ header .section_filters_bloc_item#btnCreate:hover ~ .hover-filter {
   width: 164px;
   left: 5px;
 }
+header .section_filters_bloc_item#btnMaintenance {
+  padding: 7px 25px;
+}
 header .section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
-  width: 198px;
-  left: 168px;
+  width: 199px;
+  left: 176px;
 }
 header .section_filters_bloc_item#btnStat:hover ~ .hover-filter {
   width: 121px;
@@ -619,7 +622,7 @@ header .section_filters_bloc_item.active#btnCreate ~ .background-filter {
   left: 5px;
 }
 header .section_filters_bloc_item.active#btnMaintenance ~ .background-filter {
-  left: 168px;
+  left: 176px;
 }
 header .section_filters_bloc_item.active#btnStat ~ .background-filter {
   left: 368px;

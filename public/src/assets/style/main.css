@@ -536,7 +536,8 @@ a.button-secondary:hover, button.button-secondary:hover {
 
 header {
   padding: 20px 4%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 92%;
   z-index: 2;
   display: flex;

@@ -73,7 +73,7 @@ function checkButtonActive() {
         const filterWidth = filterClickTest.offsetWidth;
         const filterBackground =  document.querySelector(".background-filter");
         const btnMaintenance = document.getElementById("btnMaintenance");
-        if (lastItemId == btnMaintenance){
+        if (lastItemId == btnMaintenance.id){
             filterBackground.style.width = filterWidth - 16 + "px";
         } else {
             filterBackground.style.width = filterWidth + "px";

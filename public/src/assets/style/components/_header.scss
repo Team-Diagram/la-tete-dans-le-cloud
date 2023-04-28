@@ -75,7 +75,7 @@ header {
           padding: 7px 26px;
           &:hover ~ .hover-filter {
             width: 199px;
-            left: 176px;
+            left: 167px;
           }
         }
         &#btnStat:hover ~.hover-filter{
@@ -86,16 +86,15 @@ header {
           background-color: rgba(48, 50, 255, 0.1);
         }
         &.active{
-          //color: $white;
           &#btnCreate ~.background-filter{
             width: 164px;
             left: 5px;
           }
           &#btnMaintenance ~.background-filter{
-            left: 176px;
+            left: 167px;
           }
           &#btnStat ~.background-filter{
-            left: 384px;
+            left: 363px;
           }
         }
       }

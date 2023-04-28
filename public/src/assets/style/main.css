@@ -606,7 +606,7 @@ header .section_filters_bloc_item#btnMaintenance {
 }
 header .section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
   width: 199px;
-  left: 176px;
+  left: 167px;
 }
 header .section_filters_bloc_item#btnStat:hover ~ .hover-filter {
   width: 121px;
@@ -620,10 +620,10 @@ header .section_filters_bloc_item.active#btnCreate ~ .background-filter {
   left: 5px;
 }
 header .section_filters_bloc_item.active#btnMaintenance ~ .background-filter {
-  left: 176px;
+  left: 167px;
 }
 header .section_filters_bloc_item.active#btnStat ~ .background-filter {
-  left: 384px;
+  left: 363px;
 }
 
 .stockage-bar {

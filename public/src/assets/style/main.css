@@ -605,18 +605,18 @@ header .section_filters_bloc_item#btnMaintenance {
   padding: 7px 26px;
 }
 header .section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
-  width: 199px;
+  width: 177px;
   left: 167px;
 }
 header .section_filters_bloc_item#btnStat:hover ~ .hover-filter {
-  width: 121px;
-  left: 384px;
+  width: 99px;
+  left: 364px;
 }
 header .section_filters_bloc_item:hover ~ .hover-filter {
   background-color: rgba(48, 50, 255, 0.1);
 }
 header .section_filters_bloc_item.active#btnCreate ~ .background-filter {
-  width: 164px;
+  width: 142px;
   left: 5px;
 }
 header .section_filters_bloc_item.active#btnMaintenance ~ .background-filter {

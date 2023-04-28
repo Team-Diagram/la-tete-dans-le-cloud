@@ -66,9 +66,7 @@ header {
         z-index: 10;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
-        &:nth-child(2){
-          //padding: 7px 22px;
-        }
+        width: max-content;
         &#btnCreate:hover ~.hover-filter{
           width: 164px;
           left: 5px;
@@ -88,7 +86,6 @@ header {
           background-color: rgba(48, 50, 255, 0.1);
         }
         &.active{
-          //background-color: $blue;
           color: $white;
           &#btnCreate ~.background-filter{
             width: 164px;

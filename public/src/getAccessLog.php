@@ -16,7 +16,7 @@ $dataLogByIp = array_values($dataLogByIp);
 </div>
 <div class="consommation_stockage title">
     <p class="size-18 font-medium">IP</p>
-    <p class="size-18 font-medium">Nombre conexions</p>
+    <p class="size-18 font-medium">Nombre connexions</p>
 </div>
 <?php
 echo "<div class='users-storage'>";

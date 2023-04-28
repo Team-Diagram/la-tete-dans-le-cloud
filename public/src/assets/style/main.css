@@ -595,6 +595,7 @@ header .section_filters_bloc_item {
   z-index: 10;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+  width: max-content;
 }
 header .section_filters_bloc_item#btnCreate:hover ~ .hover-filter {
   width: 164px;

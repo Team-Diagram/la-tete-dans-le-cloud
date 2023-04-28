@@ -590,7 +590,7 @@ header .section_filters_bloc .background-filter {
   transition: all 0.3s ease-in-out;
 }
 header .section_filters_bloc_item {
-  padding: 7px 17px;
+  padding: 7px 6px;
   font-size: 18px;
   z-index: 10;
   cursor: pointer;
@@ -598,11 +598,11 @@ header .section_filters_bloc_item {
   width: max-content;
 }
 header .section_filters_bloc_item#btnCreate:hover ~ .hover-filter {
-  width: 164px;
+  width: 142px;
   left: 5px;
 }
 header .section_filters_bloc_item#btnMaintenance {
-  padding: 7px 25px;
+  padding: 7px 26px;
 }
 header .section_filters_bloc_item#btnMaintenance:hover ~ .hover-filter {
   width: 199px;

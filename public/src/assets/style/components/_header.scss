@@ -61,18 +61,18 @@ header {
         transition: all 0.3s ease-in-out;
       }
       &_item{
-        padding: 7px 17px;
+        padding: 7px 6px;
         font-size: 18px;
         z-index: 10;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
         width: max-content;
         &#btnCreate:hover ~.hover-filter{
-          width: 164px;
+          width: 142px;
           left: 5px;
         }
         &#btnMaintenance {
-          padding: 7px 25px;
+          padding: 7px 26px;
           &:hover ~ .hover-filter {
             width: 199px;
             left: 176px;

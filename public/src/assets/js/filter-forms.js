@@ -72,7 +72,12 @@ function checkButtonActive() {
         const filterClickTest = document.getElementById(lastItemId);
         const filterWidth = filterClickTest.offsetWidth;
         const filterBackground =  document.querySelector(".background-filter");
-        filterBackground.style.width = filterWidth + "px";
+        const btnMaintenance = document.getElementById("btnMaintenance");
+        if (lastItemId == btnMaintenance){
+            filterBackground.style.width = filterWidth - 16 + "px";
+        } else {
+            filterBackground.style.width = filterWidth + "px";
+        }
     } else{
         document.getElementById("btnCreate").classList.add("active");
         document.getElementById("formCreate").classList.add("active");

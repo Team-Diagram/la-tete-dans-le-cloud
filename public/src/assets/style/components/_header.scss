@@ -44,8 +44,8 @@ header {
       position: relative;
       .hover-filter{
         position: absolute;
-        top: 5px;
-        height: calc(100% - 10px);
+        bottom: 5px;
+        height: 2.5px;
         background-color: rgba(48, 50, 255, 0);
         border-radius: 90px;
         z-index: 5;
@@ -53,8 +53,8 @@ header {
       }
       .background-filter{
         position: absolute;
-        top: 5px;
-        height: calc(100% - 10px);
+        bottom: 5px;
+        height: 2.5px;
         background-color: $blue;
         border-radius: 90px;
         z-index: 7;
@@ -86,7 +86,7 @@ header {
           background-color: rgba(48, 50, 255, 0.1);
         }
         &.active{
-          color: $white;
+          //color: $white;
           &#btnCreate ~.background-filter{
             width: 164px;
             left: 5px;
